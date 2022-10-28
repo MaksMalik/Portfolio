@@ -47,9 +47,9 @@
 
 
 .MainPage-background-row div i {
-  transition: 4s;
+  transition: 2s;
   padding: 5px;
-  color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0.075);
   cursor: default;
   -webkit-user-select: none;
   user-select: none;
@@ -58,6 +58,7 @@
 
 .MainPage-background-row div i:hover {
   transition: 0ms;
+  color: rgba(0, 255, 255, 0.342);
   text-shadow: 0 0px 120px rgba(0, 255, 255, 0.342);
 }
 
