@@ -30,7 +30,7 @@
   justify-content: center;
   align-content: center;
   padding: 10px;
-  color: rgb(27, 151, 173);
+  color: rgb(21, 112, 128);
 }
 
 .NameText div span {
@@ -47,7 +47,7 @@
   content: "M";
   font-size: 90px;
   position: absolute;
-  color: rgb(27, 151, 173);
+  color: rgb(21, 112, 128);
   left: -5px;
 }
 
@@ -56,7 +56,7 @@
   height: 0px;
   border-radius: 50%;
   border: 1px solid rgba(15, 120, 139, 0.055);
-  background: rgb(27, 151, 173);
+  background: rgb(21, 112, 128);
   position: fixed;
   animation: trail 1s linear forwards;
 }
@@ -64,7 +64,7 @@
 @keyframes trail {
   0% {
     transform: scale(0);
-    box-shadow: 0 0 20px 5px rgb(27, 151, 173);
+    box-shadow: 0 0 20px 5px rgb(21, 112, 128);
   }
 
   10% {
@@ -191,27 +191,27 @@
   font-weight: 400;
   padding: 20px;
   margin: 20px;
-  color: rgb(27, 151, 173);
-  border: 1px solid rgb(27, 151, 173);
+  color: rgb(21, 112, 128);
+  border: 1px solid rgb(21, 112, 128);
   transition: all 1s;
 }
 
 .button a:nth-child(2) {
-  background-color: rgb(27, 151, 173);
+  background-color: rgb(21, 112, 128);
   border: none;
 
   color: rgb(24, 24, 24);
 }
 
 .button a:hover {
-  background-color: rgb(27, 151, 173);
+  background-color: rgb(21, 112, 128);
   color: rgb(24, 24, 24);
-  filter: drop-shadow(0 0 30px rgb(27, 151, 173));
+  filter: drop-shadow(0 0 30px rgb(21, 112, 128));
 }
 
 .button a:nth-child(2):hover {
-  filter: drop-shadow(0 0 30px rgb(27, 151, 173));
-  color: rgb(27, 151, 173);
+  filter: drop-shadow(0 0 30px rgb(21, 112, 128));
+  color: rgb(21, 112, 128);
   background-color: rgb(24, 24, 24);
 }
 
