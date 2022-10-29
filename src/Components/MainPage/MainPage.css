@@ -1,112 +1,81 @@
 .MainPage {
   height: 100vh;
-}
-
-.MainPage-background {
   position: relative;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(24, 24, 24);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.MainPage-background-row {
-  position: relative;
-  width: 100%;
+.NameText {
   display: flex;
-  white-space: nowrap;
-  font-size: 30px;
-  transform: rotate(-0deg);
-  padding: 5px 0;
-}
-
-.MainPage-background-row div {
-  animation: animate1 80s linear infinite;
-  animation-delay: -80s;
-}
-
-.MainPage-background-row div:nth-child(2) {
-  animation: animate2 80s linear infinite;
-  animation-delay: -40s;
-}
-
-
-.MainPage-background-row:nth-child(even) div {
-  animation: animate3 80s linear infinite;
-  animation-delay: -80s;
-}
-
-.MainPage-background-row:nth-child(even) div:nth-child(2) {
-  animation: animate4 80s linear infinite;
-  animation-delay: -40s;
-}
-
-
-
-.MainPage-background-row div i {
-  transition: 2s;
-  padding: 5px;
-  color: rgba(0, 0, 0, 0.075);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  font-size: 90px;
+  font-family: 'Anton', sans-serif;
   cursor: default;
   -webkit-user-select: none;
   user-select: none;
+  overflow: hidden;
 }
 
-
-.MainPage-background-row div i:hover {
-  transition: 0ms;
-  color: rgba(0, 255, 255, 0.342);
-  text-shadow: 0 0px 120px rgba(0, 255, 255, 0.342);
+.NameText div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  color: rgb(15, 121, 139);
 }
 
+.NameText div span {
+  animation: animateName 1s ease-in-out;
+  position: relative;
+}
 
-@keyframes animate1 {
+.NameText div:nth-child(2) span:nth-child(5) {
+  color: rgb(116, 18, 18)
+}
+
+.NameText div:nth-child(2) span:nth-child(5)::after {
+  content: "M";
+  font-size: 90px;
+  position: absolute;
+  color: rgb(15, 121, 139);
+  left: -5px;
+}
+
+.trail {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid rgb(15, 121, 139);
+  background: rgb(15, 121, 139);
+  position: fixed;
+  animation: come 1s ease-in-out forwards;
+
+}
+
+@keyframes come {
   0% {
-    transform: translateX(100%);
+    transform: scale(0);
+
+  }
+
+  10% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
 
   }
 
   100% {
-    transform: translateX(-100%);
-
+    transform: scale(1) translateY(50px);
+    opacity: 0;
+    box-shadow: 0 0px 120px rgba(0, 217, 255, 0.199);
   }
 }
 
-@keyframes animate2 {
-  0% {
-    transform: translateX(0%);
 
-  }
-
-  100% {
-    transform: translateX(-200%);
-
-  }
-}
-
-@keyframes animate3 {
-  0% {
-    transform: translateX(-100%);
-
-  }
-
-  100% {
-    transform: translateX(100%);
-
-  }
-}
-
-@keyframes animate4 {
-  0% {
-    transform: translateX(-200%);
-
-  }
-
-  100% {
-    transform: translateX(0%);
-
-  }
-}

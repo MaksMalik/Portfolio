@@ -1,6 +1,8 @@
 html {
   scroll-behavior: smooth;
-  max-width: 2000px;
+  font-family: 'Anton', sans-serif;
+
+  max-width: 3000px;
   margin: auto !important;
   float: none !important;
   background-color: rgb(24, 24, 24);
