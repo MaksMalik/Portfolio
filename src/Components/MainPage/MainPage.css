@@ -52,17 +52,16 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  border: 1px solid rgb(15, 121, 139);
-  background: rgb(15, 121, 139);
+  border: 1px solid rgba(15, 120, 139, 0.151);
+  background: rgba(15, 120, 139, 0.151);
   position: fixed;
-  animation: come 1s ease-in-out forwards;
+  animation: come 1s linear forwards;
 
 }
 
 @keyframes come {
   0% {
     transform: scale(0);
-
   }
 
   10% {
@@ -74,8 +73,5 @@
   100% {
     transform: scale(1) translateY(50px);
     opacity: 0;
-    box-shadow: 0 0px 120px rgba(0, 217, 255, 0.199);
   }
 }
-
-
