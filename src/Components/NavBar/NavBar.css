@@ -1,9 +1,13 @@
 .NavBar {
   font-family: 'Anton', sans-serif;
   position: fixed;
+  z-index: 1;
+  
 }
 
 ul {
+  border-right: 3px solid rgba(0, 0, 0, 0.548);
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.808);
   height: 100vh;
   position: absolute;
   display: flex;
