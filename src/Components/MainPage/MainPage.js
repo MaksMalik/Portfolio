@@ -8,7 +8,7 @@ export default function MainPage() {
   document.addEventListener('mousemove', (e) => {
     let el = document.createElement('div');
     el.setAttribute('class', 'trail')
-    el.setAttribute('style', `left: ${e.clientX - 10}px; top: ${e.clientY - 10}px`);
+    el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
     el.onanimationend = () => {
       el.remove()
     }
@@ -25,7 +25,7 @@ export default function MainPage() {
 
 
   return (
-    <div className='MainPage'>
+    <div className='MainPage' id='HOME'>
       <div className='NameText'>
         <div>
           <span className='Name'>H</span>
@@ -64,6 +64,18 @@ export default function MainPage() {
           <span className='Name'>r</span>
         </div>
       </div>
+
+      <div className='button'>
+        <a href='#CONTACT'>
+          CONTACT ME
+        </a>
+
+        <a href='#CV'>
+          DOWNLOAD CV
+          <i class="fa-sharp fa-solid fa-file-arrow-down"></i>
+        </a>
+      </div>
+      
     </div>
   )
 }

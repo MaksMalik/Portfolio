@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 0 0 250px;
+  z-index: 1;
 }
 
 .NameText {
@@ -28,7 +30,7 @@
   justify-content: center;
   align-content: center;
   padding: 10px;
-  color: rgb(15, 121, 139);
+  color: rgb(27, 151, 173);
 }
 
 .NameText div span {
@@ -45,7 +47,7 @@
   content: "M";
   font-size: 90px;
   position: absolute;
-  color: rgb(15, 121, 139);
+  color: rgb(27, 151, 173);
   left: -5px;
 }
 
@@ -54,7 +56,7 @@
   height: 0px;
   border-radius: 50%;
   border: 1px solid rgba(15, 120, 139, 0.055);
-  background: rgb(15, 121, 139);
+  background: rgb(27, 151, 173);
   position: fixed;
   animation: trail 1s linear forwards;
 }
@@ -62,12 +64,12 @@
 @keyframes trail {
   0% {
     transform: scale(0);
-    box-shadow: 0 0 10px 10px rgb(15, 121, 139);
+    box-shadow: 0 0 20px 5px rgb(27, 151, 173);
   }
 
   10% {
-    transform: scale(1) translateY(0px);
-    opacity: 1;
+    transform: scale(2) translateY(0px);
+    opacity: 0.3;
 
   }
 
@@ -173,6 +175,47 @@
 .rubberBand {
   -webkit-animation-name: rubberBand;
   animation-name: rubberBand;
-  animation: rubberBand 1s linear forwards;
+  animation: rubberBand 1s linear;
+}
 
+.button {}
+
+.button a {
+  position: relative;
+  display: inline-block;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 30px;
+  overflow: hidden;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  padding: 20px;
+  margin: 20px;
+  color: rgb(27, 151, 173);
+  border: 1px solid rgb(27, 151, 173);
+  transition: all 1s;
+}
+
+.button a:nth-child(2) {
+  background-color: rgb(27, 151, 173);
+  border: none;
+
+  color: rgb(24, 24, 24);
+}
+
+.button a:hover {
+  background-color: rgb(27, 151, 173);
+  color: rgb(24, 24, 24);
+  filter: drop-shadow(0 0 30px rgb(27, 151, 173));
+}
+
+.button a:nth-child(2):hover {
+  filter: drop-shadow(0 0 30px rgb(27, 151, 173));
+  color: rgb(27, 151, 173);
+  background-color: rgb(24, 24, 24);
+}
+
+.button a i {
+  color: rgb(116, 18, 18);
+  padding: 0 0 0 10px;
 }

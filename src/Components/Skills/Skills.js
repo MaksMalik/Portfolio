@@ -3,6 +3,6 @@ import "./Skills.css"
 
 export default function Skills() {
   return (
-    <div className='Skills'>Skills</div>
+    <div className='Skills' id='SKILLS'>Skills</div>
   )
 }
