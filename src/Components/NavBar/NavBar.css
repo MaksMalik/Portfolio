@@ -2,10 +2,10 @@
   font-family: 'Anton', sans-serif;
   position: fixed;
   z-index: 1;
-  
 }
 
 ul {
+  width: 250px;
   border-right: 3px solid rgba(0, 0, 0, 0.548);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.808);
   height: 100vh;
@@ -14,9 +14,8 @@ ul {
   flex-direction: column;
   align-content: center;
   justify-content: center;
-  gap: 50px;
+  gap: 20px;
 }
-
 
 ul li {
   list-style: none;
@@ -28,7 +27,7 @@ ul li a {
   padding: 20px;
   z-index: 1;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 35px;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: transparent;

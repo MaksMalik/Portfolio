@@ -16,6 +16,14 @@ export default function MainPage() {
   })
 
 
+  document.addEventListener('mouseover', (e) => {
+    e.target.classList.contains("Name") && e.target.classList.add("rubberBand")
+    setTimeout(() => {
+      e.target.classList.remove("rubberBand");
+    }, "1000")
+  })
+
+
   return (
     <div className='MainPage'>
       <div className='NameText'>
@@ -36,7 +44,7 @@ export default function MainPage() {
           <span className='Name'>,</span>
         </div>
         <div>
-          <span className='Name'>f</span>
+          <span className='Name'>F</span>
           <span className='Name'>r</span>
           <span className='Name'>o</span>
           <span className='Name'>n</span>
@@ -45,7 +53,7 @@ export default function MainPage() {
           <span className='Name'>n</span>
           <span className='Name'>d</span>
           <div className='Name'> </div>
-          <span className='Name'>d</span>
+          <span className='Name'>D</span>
           <span className='Name'>e</span>
           <span className='Name'>v</span>
           <span className='Name'>e</span>

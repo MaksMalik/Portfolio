@@ -6,16 +6,16 @@ export default function NavBar() {
     <div className='NavBar'>
       <ul>
         <li>
-          <a href='#d' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+          <a href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
         </li>
         <li>
-          <a href='#d' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
+          <a href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
         </li>
         <li>
-          <a href='#d' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </li>
         <li>
-          <a href='#d' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
+          <a href='#CONTACT' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
         </li>
       </ul>
     </div>
