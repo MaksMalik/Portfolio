@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Anton', sans-serif;
-
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   max-width: 3000px;
   margin: auto !important;
   float: none !important;
   background-color: rgb(24, 24, 24);
-
 }

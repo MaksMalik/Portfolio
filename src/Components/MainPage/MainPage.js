@@ -3,10 +3,10 @@ import "./MainPage.css"
 
 export default function MainPage() {
 
-  let body = document.body
+  const body = document.body
 
   document.addEventListener('mousemove', (e) => {
-    let el = document.createElement('div');
+    const el = document.createElement('div');
     el.setAttribute('class', 'trail')
     el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
     el.onanimationend = () => {
@@ -23,9 +23,8 @@ export default function MainPage() {
     }, "1000")
   })
 
-
   return (
-    <div className='MainPage' id='HOME'>
+    <section className='MainPage' id='HOME'>
       <div className='NameText'>
         <div>
           <span className='Name'>H</span>
@@ -72,10 +71,15 @@ export default function MainPage() {
 
         <a href='#CV'>
           DOWNLOAD CV
-          <i class="fa-sharp fa-solid fa-file-arrow-down"></i>
+          <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
         </a>
       </div>
-      
-    </div>
+
+      <div className='scroll'>
+        <a href='#SKILLS'>
+          <i className="fa-solid fa-computer-mouse"></i>
+        </a>
+      </div>
+    </section>
   )
 }

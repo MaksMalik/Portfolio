@@ -2,10 +2,13 @@
   font-family: 'Anton', sans-serif;
   position: fixed;
   z-index: 2;
+
 }
 
 ul {
   width: 250px;
+  background-color: rgba(0, 0, 0, 0.205);
+
   border-right: 3px solid rgba(0, 0, 0, 0.548);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.808);
   height: 100vh;
@@ -46,7 +49,6 @@ ul li a::before {
 
 ul li a:hover::before {
   width: 70%;
-  filter: drop-shadow(0 0 25px white);
+  filter: drop-shadow(0 0 15px white);
   -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
 }
-

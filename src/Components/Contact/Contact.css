@@ -1,4 +1,4 @@
-.Skills {
+.Contact {
   height: 100vh;
   position: relative;
   display: flex;
@@ -10,4 +10,5 @@
   align-items: center;
   scroll-snap-align: start;
   background-color: rgba(0, 0, 0, 0.068);
+
 }
