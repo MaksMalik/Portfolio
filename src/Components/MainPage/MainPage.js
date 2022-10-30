@@ -16,7 +16,7 @@ export default function MainPage() {
         <div>
           <span className='Name'>H</span>
           <span className='Name'>i</span>
-          <span className='Name'>,</span>
+          <spna className='Name'>,</spna>
         </div>
         <div>
           <span className='Name'>I</span>
@@ -27,7 +27,6 @@ export default function MainPage() {
           <span className='Name'>a</span>
           <span className='Name'>k</span>
           <span className='Name'>s</span>
-          <span className='Name'>,</span>
         </div>
         <div>
           <span className='Name'>F</span>
@@ -49,18 +48,19 @@ export default function MainPage() {
           <span className='Name'>e</span>
           <span className='Name'>r</span>
         </div>
-      </div>
-
       <div className='button'>
         <a href='#CONTACT'>
           CONTACT ME
         </a>
-
-        <a href='#CV'>
+        <a href='/src/Download/Maksymilian_Malik_CV.pdf' download>
           DOWNLOAD CV
           <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
         </a>
       </div>
+      </div>
+
+
+        
 
       <div className='scroll'>
         <a href='#SKILLS'>

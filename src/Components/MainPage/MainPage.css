@@ -31,7 +31,7 @@
   justify-content: center;
   align-content: center;
   padding: 10px;
-  color: rgb(21, 112, 128);
+  color: var(--blue);
 }
 
 .NameText div span {
@@ -40,103 +40,65 @@
 }
 
 .NameText div:nth-child(2) span:nth-child(5) {
-  color: rgb(116, 18, 18);
-  transition: all 1s;
+  color: white;
+  text-shadow: 0 0 2px white;
 }
 
-.NameText div:nth-child(2) span:nth-child(5)::after {
-  content: "M";
-  font-size: 90px;
-  position: absolute;
-  color: rgb(21, 112, 128);
-  left: -5px;
+.NameText div:nth-child(2) span:nth-child(6) {
+  color: white;
+  text-shadow: 0 0 2px white;
+
 }
 
+.NameText div:nth-child(2) span:nth-child(7) {
+  color: white;
+  text-shadow: 0 0 2px white;
 
-@-webkit-keyframes rubberBand {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1)
-  }
+}
 
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1)
-  }
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1)
-  }
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1)
-  }
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1)
-  }
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1)
-  }
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1)
-  }
+.NameText div:nth-child(2) span:nth-child(8) {
+  color: white;
+  text-shadow: 0 0 2px white;
 }
 
 @keyframes rubberBand {
   0% {
     -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1)
   }
 
   30% {
     -webkit-transform: scale3d(1.25, 0.75, 1);
-    -ms-transform: scale3d(1.25, 0.75, 1);
     transform: scale3d(1.25, 0.75, 1)
   }
 
   40% {
     -webkit-transform: scale3d(0.75, 1.25, 1);
-    -ms-transform: scale3d(0.75, 1.25, 1);
     transform: scale3d(0.75, 1.25, 1)
   }
 
   50% {
     -webkit-transform: scale3d(1.15, 0.85, 1);
-    -ms-transform: scale3d(1.15, 0.85, 1);
     transform: scale3d(1.15, 0.85, 1)
   }
 
   65% {
     -webkit-transform: scale3d(0.95, 1.05, 1);
-    -ms-transform: scale3d(0.95, 1.05, 1);
     transform: scale3d(0.95, 1.05, 1)
   }
 
   75% {
     -webkit-transform: scale3d(1.05, 0.95, 1);
-    -ms-transform: scale3d(1.05, 0.95, 1);
     transform: scale3d(1.05, 0.95, 1)
   }
 
   100% {
     -webkit-transform: scale3d(1, 1, 1);
-    -ms-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1)
   }
 }
 
 .rubberBand {
-  -webkit-animation-name: rubberBand;
-  animation-name: rubberBand;
   animation: rubberBand 1s linear;
 }
 
@@ -152,55 +114,46 @@
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
   padding: 20px;
-  margin: 20px;
-  color: rgb(21, 112, 128);
-  border: 1px solid rgb(21, 112, 128);
+  margin: 20px 40px 20px 0;
+  color: white;
+  border: 1px solid var(--blue);
   transition: all 0.5s;
 }
 
 .button a:nth-child(2) {
-  background-color: rgb(21, 112, 128);
+  background-color: var(--blue);
   color: rgb(24, 24, 24);
 }
 
 .button a:hover {
-  background-color: rgb(21, 112, 128);
+  background-color: var(--blue);
   color: rgb(24, 24, 24);
-  filter: drop-shadow(0 0 10px rgb(21, 112, 128));
 }
 
 .button a:nth-child(2):hover {
-  filter: drop-shadow(0 0 10px rgb(21, 112, 128));
-  color: rgb(21, 112, 128);
+  color: white;
   background-color: rgb(24, 24, 24);
 }
 
 .button a i {
-  color: rgb(116, 18, 18);
   padding: 0 0 0 10px;
 }
-
-
 
 .scroll {
   display: flex;
   position: absolute;
   bottom: 30px;
   flex-direction: column;
-  animation: updown 1s infinite forwards;
-
+  animation: upAndDown 1s infinite forwards;
 }
-
 
 .scroll i {
-  color: rgb(116, 18, 18);
+  color: white;
   font-size: 20px;
   animation: rubberBand 1s linear infinite;
-
-
 }
 
-@keyframes updown {
+@keyframes upAndDown {
 
   0% {
     bottom: 30px;
