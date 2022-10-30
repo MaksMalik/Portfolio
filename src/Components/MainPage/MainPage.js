@@ -3,25 +3,12 @@ import "./MainPage.css"
 
 export default function MainPage() {
 
-  const body = document.body
-
-  document.addEventListener('mousemove', (e) => {
-    const el = document.createElement('div');
-    el.setAttribute('class', 'trail')
-    el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
-    el.onanimationend = () => {
-      el.remove()
-    }
-    body.insertAdjacentElement('beforeend', el)
-  })
-
-
-  document.addEventListener('mouseover', (e) => {
+  /* document.addEventListener('mouseover', (e) => {
     e.target.classList.contains("Name") && e.target.classList.add("rubberBand")
     setTimeout(() => {
       e.target.classList.remove("rubberBand");
     }, "1000")
-  })
+  }) */
 
   return (
     <section className='MainPage section' id='HOME'>
