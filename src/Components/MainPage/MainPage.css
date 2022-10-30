@@ -155,7 +155,7 @@
   margin: 20px;
   color: rgb(21, 112, 128);
   border: 1px solid rgb(21, 112, 128);
-  transition: all 1s;
+  transition: all 0.5s;
 }
 
 .button a:nth-child(2) {
@@ -166,11 +166,11 @@
 .button a:hover {
   background-color: rgb(21, 112, 128);
   color: rgb(24, 24, 24);
-  filter: drop-shadow(0 0 30px rgb(21, 112, 128));
+  filter: drop-shadow(0 0 10px rgb(21, 112, 128));
 }
 
 .button a:nth-child(2):hover {
-  filter: drop-shadow(0 0 30px rgb(21, 112, 128));
+  filter: drop-shadow(0 0 10px rgb(21, 112, 128));
   color: rgb(21, 112, 128);
   background-color: rgb(24, 24, 24);
 }
