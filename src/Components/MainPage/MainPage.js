@@ -52,7 +52,7 @@ export default function MainPage() {
         <a href='#CONTACT'>
           CONTACT ME
         </a>
-        <a href='/src/Download/Maksymilian_Malik_CV.pdf' download>
+        <a href='../../../public/Download/Maksymilian_Malik_CV.pdf' download>
           DOWNLOAD CV
           <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
         </a>
