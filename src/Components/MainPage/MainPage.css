@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 250px;
+  margin: 0 0 0 200px;
   z-index: 1;
   scroll-snap-align: start;
 }
