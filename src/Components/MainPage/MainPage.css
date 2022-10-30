@@ -36,7 +36,30 @@
 
 .NameText div span {
   position: relative;
-  transition: all 1s;
+}
+
+.NameText div:nth-child(1) {
+  font-size: 55px;
+}
+
+.NameText div:nth-child(2) span:nth-child(1) {
+  font-size: 75px;
+
+}
+
+.NameText div:nth-child(2) span:nth-child(2) {
+  font-size: 75px;
+
+}
+
+.NameText div:nth-child(2) span:nth-child(3) {
+  font-size: 75px;
+
+}
+
+.NameText div:nth-child(2) span:nth-child(4) {
+  font-size: 75px;
+
 }
 
 .NameText div:nth-child(2) span:nth-child(5) {
@@ -59,6 +82,10 @@
 .NameText div:nth-child(2) span:nth-child(8) {
   color: white;
   text-shadow: 0 0 2px white;
+}
+
+.NameText div:nth-child(3) span {
+  font-size: 55px;
 }
 
 @keyframes rubberBand {
@@ -113,8 +140,8 @@
   overflow: hidden;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  padding: 20px;
-  margin: 20px 40px 20px 0;
+  padding: 20px 25px 20px 25px;
+  margin: 20px 39px 20px 0;
   color: white;
   border: 1px solid var(--blue);
   transition: all 0.5s;
@@ -171,3 +198,70 @@
     bottom: 30px;
   }
 }
+
+
+.parallax {
+
+}
+
+
+.b1 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.123);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50px;
+  top: 80px;
+  left: 400px;
+}
+
+.b2 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.123);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50px;
+  top: 150px;
+  left: 200px;
+}
+
+.b3 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.123);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50px;
+  top: 600px;
+  left: 350px;
+}
+
+.b4 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.123);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50px;
+  top: 150px;
+  left: 200px;
+}
+
+.b5 {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.123);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: 50px;
+  top: 150px;
+  left: 200px;
+}
+

@@ -10,23 +10,35 @@ export default function MainPage() {
     }, "1000")
   }) */
 
+  document.addEventListener("mousemove", parallaxF)
+
+  function parallaxF(e) {
+    this.querySelectorAll(".parallax").forEach(element => {
+      const speed = element.getAttribute("data-speed")
+      const x = (window.innerWidth - e.pageX*speed)/200
+      const y = (window.innerHeight - e.pageY*speed)/200
+      element.style.transform = `translateX(${x}px) translateY(${y}px)`
+    })
+  }
+
+
   return (
     <section className='MainPage section' id='HOME'>
       <div className='NameText'>
         <div>
           <span className='Name'>H</span>
           <span className='Name'>i</span>
-          <spna className='Name'>,</spna>
+          <span className='Name'>,</span>
         </div>
         <div>
           <span className='Name'>I</span>
           <span className='Name'>'</span>
           <span className='Name'>m</span>
           <div className='Name'> </div>
-          <span className='Name'>M</span>
-          <span className='Name'>a</span>
-          <span className='Name'>k</span>
-          <span className='Name'>s</span>
+          <span className='Name parallax' data-speed="1">M</span>
+          <span className='Name parallax' data-speed="1">a</span>
+          <span className='Name parallax' data-speed="1">k</span>
+          <span className='Name parallax' data-speed="1">s</span>
         </div>
         <div>
           <span className='Name'>F</span>
@@ -52,7 +64,7 @@ export default function MainPage() {
         <a href='#CONTACT'>
           CONTACT ME
         </a>
-        <a href='../../../public/Download/Maksymilian_Malik_CV.pdf' download>
+        <a href="/Maksymilian_Malik_CV.pdf" download="Maksymilian_Malik_CV.pdf">
           DOWNLOAD CV
           <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
         </a>
@@ -67,6 +79,29 @@ export default function MainPage() {
           <i className="fa-solid fa-computer-mouse"></i>
         </a>
       </div>
+
+      <div className='parallax'data-speed="8">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+      </div>
+        <div className='b1 parallax' data-speed="-2"></div>
+        <div className='b2 parallax' data-speed="4"></div>
+        <div className='b3 parallax' data-speed="-10"></div>
+        <div className='b4 parallax' data-speed="12"></div>
+        <div className='b5 parallax' data-speed="-8"></div>
+        <div className='b6 parallax' data-speed="6"></div>
+
     </section>
   )
 }
