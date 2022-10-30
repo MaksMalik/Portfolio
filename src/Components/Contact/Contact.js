@@ -3,6 +3,6 @@ import "./Contact.css"
 
 export default function Contact() {
   return (
-    <section className='Contact' id='CONTACT'>Contact</section>
+    <section className='Contact section' id='CONTACT'>Contact</section>
   )
 }

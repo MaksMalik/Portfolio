@@ -24,7 +24,7 @@ export default function MainPage() {
   })
 
   return (
-    <section className='MainPage' id='HOME'>
+    <section className='MainPage section' id='HOME'>
       <div className='NameText'>
         <div>
           <span className='Name'>H</span>
