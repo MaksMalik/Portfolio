@@ -17,8 +17,10 @@ export default function NavBar() {
       })
 
       links.forEach((item) => {
+        item.style.cssText = "color: white"
         if (item.href.includes(currentPage)) {
-          item.style.cssText = "color: white"
+          item.style.cssText = "color: white";
+          item.classList.remove("active")
 
         }
         else {
@@ -36,7 +38,7 @@ export default function NavBar() {
     <div className='NavBar'>
       <ul>
         <li>
-          <a className="link" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+          <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
         </li>
         <li>
           <a className="link" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
