@@ -1,12 +1,12 @@
 .NavBar {
   font-family: 'Anton', sans-serif;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
 }
 
 ul {
   width: 200px;
-  background-color: rgba(0, 0, 0, 0.205);
+  background-color: rgba(3, 3, 3, 0.342);
 
   border-right: 3px solid rgba(0, 0, 0, 0.548);
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.808);

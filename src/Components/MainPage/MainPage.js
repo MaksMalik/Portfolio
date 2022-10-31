@@ -15,8 +15,8 @@ export default function MainPage() {
   function parallaxF(e) {
     this.querySelectorAll(".parallax").forEach(element => {
       const speed = element.getAttribute("data-speed")
-      const x = (window.innerWidth - e.pageX*speed)/200
-      const y = (window.innerHeight - e.pageY*speed)/200
+      const x = (window.innerWidth - e.pageX*speed)/1000
+      const y = (window.innerHeight - e.pageY*speed)/1000
       element.style.transform = `translateX(${x}px) translateY(${y}px)`
     })
   }
@@ -35,10 +35,10 @@ export default function MainPage() {
           <span className='Name'>'</span>
           <span className='Name'>m</span>
           <div className='Name'> </div>
-          <span className='Name parallax' data-speed="1">M</span>
-          <span className='Name parallax' data-speed="1">a</span>
-          <span className='Name parallax' data-speed="1">k</span>
-          <span className='Name parallax' data-speed="1">s</span>
+          <span className='Name parallax' data-speed="10">M</span>
+          <span className='Name parallax' data-speed="10">a</span>
+          <span className='Name parallax' data-speed="10">k</span>
+          <span className='Name parallax' data-speed="10">s</span>
         </div>
         <div>
           <span className='Name'>F</span>
@@ -76,31 +76,12 @@ export default function MainPage() {
 
       <div className='scroll'>
         <a href='#SKILLS'>
-          <i className="fa-solid fa-computer-mouse"></i>
+          <i className="fa-solid fa-computer-mouse" ></i>
         </a>
       </div>
 
-      <div className='parallax'data-speed="8">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-
-      </div>
-        <div className='b1 parallax' data-speed="-2"></div>
-        <div className='b2 parallax' data-speed="4"></div>
-        <div className='b3 parallax' data-speed="-10"></div>
-        <div className='b4 parallax' data-speed="12"></div>
-        <div className='b5 parallax' data-speed="-8"></div>
-        <div className='b6 parallax' data-speed="6"></div>
+      <div className='triangle-left'></div>
+      <div className='triangle-right'></div>
 
     </section>
   )
