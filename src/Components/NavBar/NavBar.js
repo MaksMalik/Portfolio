@@ -69,8 +69,6 @@ export default function NavBar() {
                 <span className="line line3"></span>
             </div>
             <ul className="menu-items">
-            <label type="button" class="btn btn-primary btn-block">
-
               <li>
                 <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
               </li>
@@ -89,7 +87,6 @@ export default function NavBar() {
                   <a href='https://github.com/MaksMalik' target="_blank" rel="noreferrer"><div className='Navbar__icon icon2'></div></a>
                 </div>
               </li>
-              </label>
             </ul>
         </div>
       </nav>
