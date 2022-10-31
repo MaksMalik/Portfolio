@@ -55,7 +55,7 @@ html {
   height: 0px;
   border-radius: 50%;
   position: fixed;
-  animation: trail 1s forwards;
+  animation: trail 0.5s forwards;
 }
 
 @keyframes trail {
