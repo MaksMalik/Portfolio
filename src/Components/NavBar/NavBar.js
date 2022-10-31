@@ -35,7 +35,8 @@ export default function NavBar() {
 
 
   return (
-    <div className='NavBar'>
+    <>
+    <div className='NavBar PC'>
       <ul>
         <li>
           <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
@@ -51,5 +52,49 @@ export default function NavBar() {
         </li>
       </ul>
     </div>
+
+    <div className='NavBar PC'>
+      <ul>
+        <li>
+          <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+        </li>
+        <li>
+          <a className="link" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
+        </li>
+        <li>
+          <a className="link" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </li>
+        <li>
+          <a className="link" href='#CONTACT' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
+        </li>
+      </ul>
+    </div>
+
+
+    <nav className="navbarM">
+      <div className="navbar-container container">
+          <input type="checkbox" name="" id=""></input>
+          <div className="hamburger-lines">
+              <span className="line line1"></span>
+              <span className="line line2"></span>
+              <span className="line line3"></span>
+          </div>
+          <ul className="menu-items">
+            <li>
+              <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+            </li>
+            <li>
+              <a className="link" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
+            </li>
+            <li>
+              <a className="link" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </li>
+            <li>
+              <a className="link" href='#CONTACT' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+    </>
   )
 }

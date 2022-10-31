@@ -10,3 +10,11 @@
   align-items: center;
   scroll-snap-align: start;
 }
+
+
+
+@media only screen and (max-width: 1000px) {
+  .Portfolio {
+    margin: 0;
+  }
+}

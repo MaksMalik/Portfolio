@@ -9,7 +9,6 @@
   z-index: 1;
   scroll-snap-align: start;
   overflow: hidden;
-
 }
 
 .NameText {
@@ -66,24 +65,24 @@
 
 .NameText div:nth-child(2) span:nth-child(5) {
   color: white;
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 3px white;
 }
 
 .NameText div:nth-child(2) span:nth-child(6) {
   color: white;
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 3px white;
 
 }
 
 .NameText div:nth-child(2) span:nth-child(7) {
   color: white;
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 3px white;
 
 }
 
 .NameText div:nth-child(2) span:nth-child(8) {
   color: white;
-  text-shadow: 0 0 2px white;
+  text-shadow: 0 0 3px white;
 }
 
 .NameText div:nth-child(3) span {
@@ -150,6 +149,8 @@
 }
 
 .button a:nth-child(2) {
+  margin: 20px 0px 20px 0;
+
   background-color: var(--blue);
   color: rgb(24, 24, 24);
 }
@@ -209,10 +210,7 @@
   z-index: 3;
   transform: rotate(45deg);
   left: -250px;
-  box-shadow: 0 0 10px black;
-  animation: fromLeft 2s linear;
-  filter: blur(3px);
-  
+  box-shadow: 0 0 15px black;
 }
 
 .triangle-right {
@@ -223,8 +221,122 @@
   z-index: 3;
   transform: rotate(45deg);
   right: -250px;
-  box-shadow: 0 0 10px black;
-  overflow: hidden;
-  animation: fromRight 2s linear;
-  filter: blur(3px);
+  box-shadow: 0 0 15px black;
+}
+
+
+
+@media only screen and (max-width: 1500px) {
+  .triangle-left {
+    width: 300px;
+    height: 300px;
+    left: -150px;
+  }
+
+  .triangle-right {
+    width: 300px;
+    height: 300px;
+    right: -150px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .triangle-left {
+    width: 200px;
+    height: 200px;
+    left: -100px;
+  }
+
+  .triangle-right {
+    width: 200px;
+    height: 200px;
+    right: -100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .MainPage {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .triangle-left {
+    width: 140px;
+    height: 140px;
+    left: -70px;
+  }
+
+  .triangle-right {
+    width: 140px;
+    height: 140px;
+    right: -70px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .NameText div:nth-child(1) {
+    font-size: 40px;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(1) {
+    font-size: 60px;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(2) {
+    font-size: 60px;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(3) {
+    font-size: 60px;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(4) {
+    font-size: 60px;
+  }
+
+  .NameText div:nth-child(3) span {
+    font-size: 40px;
+  }
+
+  .NameText {
+    font-size: 75px;
+  }
+
+  .button a {
+    font-size: 10px;
+    padding: 15px 15px 15px 15px;
+    margin: 15px 29px 20px 0;
+  }
+
+  .button a:nth-child(2) {
+    margin: 15px 0px 20px 0;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .triangle-left {
+    width: 100px;
+    height: 100px;
+    left: -50px;
+  }
+
+  .triangle-right {
+    width: 100px;
+    height: 100px;
+    right: -50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .triangle-left {
+    top: -50px;
+    left: calc(50% - 50px);
+  }
+
+  .triangle-right {
+    bottom: -50px;
+    left: calc(50% - 50px);
+  }
 }

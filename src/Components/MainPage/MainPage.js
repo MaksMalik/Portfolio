@@ -42,10 +42,10 @@ export default function MainPage() {
           <span className='Name'>'</span>
           <span className='Name'>m</span>
           <div className='Name'> </div>
-          <span className='Name parallax' data-speed="10">M</span>
-          <span className='Name parallax' data-speed="10">a</span>
-          <span className='Name parallax' data-speed="10">k</span>
-          <span className='Name parallax' data-speed="10">s</span>
+          <span className='Name parallax' data-speed="5">M</span>
+          <span className='Name parallax' data-speed="5">a</span>
+          <span className='Name parallax' data-speed="5">k</span>
+          <span className='Name parallax' data-speed="5">s</span>
         </div>
         <div>
           <span className='Name'>F</span>
