@@ -11,7 +11,7 @@ export default function NavBar() {
     window.onscroll = function () {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 500) {
+        if (window.pageYOffset >= sectionTop - 200) {
           setCurrentPage(section.getAttribute("id"))
         }
       })
