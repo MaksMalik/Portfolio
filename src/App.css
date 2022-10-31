@@ -3,10 +3,6 @@
   --red: rgb(116, 18, 18);
 }
 
-*:focus {
-  outline: 0 !important;
-}
-
 .section::-webkit-scrollbar {
   width: 16px;
 }

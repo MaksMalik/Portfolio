@@ -102,6 +102,10 @@ ul li a:hover::before {
   opacity: 1;
 }
 
+.link:focus {
+  outline: none;
+  box-shadow: none;
+}
 
 
 @media only screen and (max-width: 1000px) {
@@ -152,7 +156,7 @@ ul li a:hover::before {
   .icon1 {
     margin: 0;
   }
-  
+
   .icon2 {
     margin: 0;
   }
