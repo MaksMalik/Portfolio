@@ -43,7 +43,8 @@
 html {
   scroll-behavior: smooth;
   font-family: 'Anton', sans-serif;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
   overflow-y: scroll;
   margin: auto !important;
   float: none !important;
@@ -52,7 +53,8 @@ html {
 
 @media only screen and (max-width: 768px) {
   html {
-    scroll-snap-type: none;
+    -ms-scroll-snap-type: none;
+        scroll-snap-type: none;
   }
 }
 
@@ -63,7 +65,26 @@ html {
   height: 0px;
   border-radius: 50%;
   position: fixed;
-  animation: trail 0.5s forwards;
+  -webkit-animation: trail 0.5s forwards;
+          animation: trail 0.5s forwards;
+}
+
+@-webkit-keyframes trail {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+    box-shadow: 0 0 20px 5px white;
+  }
+
+  60% {
+    transform: scale(1.5);
+    opacity: 0.4;
+  }
+
+  100% {
+    transform: scale(0) ;
+    opacity: 0;
+  }
 }
 
 @keyframes trail {
@@ -81,6 +102,17 @@ html {
   100% {
     transform: scale(0) ;
     opacity: 0;
+  }
+}
+
+@-webkit-keyframes letters {
+  0% {
+    transform: scaleY(0);
+  }
+
+
+  100% {
+    transform: scale(2);
   }
 }
 

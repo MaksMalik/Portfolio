@@ -56,7 +56,8 @@ ul li a::before {
 
 ul li a:hover::before {
   width: 70%;
-  filter: drop-shadow(0 0 15px white);
+  -webkit-filter: drop-shadow(0 0 15px white);
+          filter: drop-shadow(0 0 15px white);
   -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
 }
 
