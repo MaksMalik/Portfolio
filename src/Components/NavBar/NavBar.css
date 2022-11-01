@@ -54,12 +54,18 @@ ul li a::before {
   border-right: 4px solid white;
 }
 
-ul li a:hover::before {
+ul li a:not(:focus):hover::before {
   width: 70%;
   -webkit-filter: drop-shadow(0 0 15px white);
           filter: drop-shadow(0 0 15px white);
   -webkit-text-stroke: 0px rgba(255, 255, 255, 0);
 }
+
+ul li a:focus {
+  outline: none;
+}
+
+
 
 .active {
   color: white;
@@ -101,11 +107,6 @@ ul li a:hover::before {
 
 .icon2:hover {
   opacity: 1;
-}
-
-.link:focus {
-  outline: none;
-  box-shadow: none;
 }
 
 
