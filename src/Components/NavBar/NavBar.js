@@ -31,6 +31,12 @@ export default function NavBar() {
   })
 
 
+  window.addEventListener('click', function(e){   
+    if (!document.getElementById('navbarMm').contains(e.target)) {
+      document.getElementById("checkBoxNavBar").checked = false;
+    }
+  });
+
 
 
 
@@ -60,9 +66,9 @@ export default function NavBar() {
 
 
 
-      <nav className="navbarM">
+      <nav className="navbarM" id='navbarMm'>
         <div className="navbar-container container">
-            <input type="checkbox" name="" id=""></input>
+            <input type="checkbox" name="" id="checkBoxNavBar"></input>
             <div className="hamburger-lines">
                 <span className="line line1"></span>
                 <span className="line line2"></span>
