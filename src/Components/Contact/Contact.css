@@ -9,8 +9,8 @@
   justify-content: center;
   align-items: center;
   scroll-snap-align: start;
-  background-color: rgba(3, 3, 3, 0.164);
-  box-shadow: 0 0 15px black;
+  background-color: rgba(3, 3, 3, 0.11);
+  box-shadow: 0 0 5px black;
 }
 
 
