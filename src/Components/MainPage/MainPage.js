@@ -13,8 +13,10 @@ export default function MainPage() {
 
   if (("ontouchstart" in document.documentElement))
   {}
-  else {
+  else{
   document.addEventListener("mousemove", parallaxF)
+  const body = document.body
+
 
   function parallaxF(e) {
       this.querySelectorAll(".parallax").forEach(element => {
@@ -31,6 +33,18 @@ export default function MainPage() {
         element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
       })
     }
+
+    document.addEventListener('mousemove', (e) => {
+      if(window.matchMedia("(pointer: coarse)").matches) {
+        const el = document.createElement('div');
+        el.setAttribute('class', 'trail')
+        el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
+        el.onanimationend = () => {
+          el.remove()
+        }
+        body.insertAdjacentElement('beforeend', el)
+      }
+    })
   }
   
 
