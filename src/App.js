@@ -11,15 +11,20 @@ function App() {
   const body = document.body
 
   document.addEventListener('mousemove', (e) => {
-    const el = document.createElement('div');
-    el.setAttribute('class', 'trail')
-    el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
-    el.onanimationend = () => {
-      el.remove()
+    if(window.matchMedia("(pointer: coarse)").matches) {
+      const el = document.createElement('div');
+      el.setAttribute('class', 'trail')
+      el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
+      el.onanimationend = () => {
+        el.remove()
+      }
+      body.insertAdjacentElement('beforeend', el)
     }
-    body.insertAdjacentElement('beforeend', el)
   })
-  
+
+
+
+
   return (
     <>
       <NavBar />

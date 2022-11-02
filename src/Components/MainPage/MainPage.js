@@ -10,23 +10,29 @@ export default function MainPage() {
     }, "1000")
   }) */
 
+
+  if (("ontouchstart" in document.documentElement))
+  {}
+  else {
   document.addEventListener("mousemove", parallaxF)
 
   function parallaxF(e) {
-    this.querySelectorAll(".parallax").forEach(element => {
-      const speed = element.getAttribute("data-speed")
-      const x = (window.innerWidth - e.pageX*speed)/1000
-      const y = (window.innerHeight - e.pageY*speed)/1000
-      element.style.transform = `translateX(${x}px) translateY(${y}px)`
-    })
+      this.querySelectorAll(".parallax").forEach(element => {
+        const speed = element.getAttribute("data-speed")
+        const x = (window.innerWidth - e.pageX*speed)/1000
+        const y = (window.innerHeight - e.pageY*speed)/1000
+        element.style.transform = `translateX(${x}px) translateY(${y}px)`
+      })
 
-    this.querySelectorAll(".parallaxTriangle").forEach(element => {
-      const speed = element.getAttribute("data-speed")
-      const x = (window.innerWidth - e.pageX*speed)/1000
-      const y = (window.innerHeight - e.pageY*speed)/1000
-      element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
-    })
+      this.querySelectorAll(".parallaxTriangle").forEach(element => {
+        const speed = element.getAttribute("data-speed")
+        const x = (window.innerWidth - e.pageX*speed)/1000
+        const y = (window.innerHeight - e.pageY*speed)/1000
+        element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
+      })
+    }
   }
+  
 
 
   return (
