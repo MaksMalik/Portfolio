@@ -67,6 +67,7 @@ html {
   position: fixed;
   -webkit-animation: trail 0.5s forwards;
           animation: trail 0.5s forwards;
+          z-index: 5;
 }
 
 @-webkit-keyframes trail {
