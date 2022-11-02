@@ -8,6 +8,8 @@ export default function NavBar() {
   useEffect(() => {
     const sections = document.querySelectorAll("section")
     const links = document.querySelectorAll(".link")
+    const navBar = document.querySelector(".ulNavBar")
+
     window.onscroll = function () {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -27,8 +29,19 @@ export default function NavBar() {
           item.style = "color: transparent"
         }
       })
+      
+      links.forEach((element) => {
+        if (element.style.color === "white" && element.classList.contains("even")) {
+          navBar.style.backgroundColor = "var(--background)"
+        }
+        if (element.style.color === "white" && element.classList.contains("odd")) {
+          navBar.style.backgroundColor = "rgb(19, 19, 19)"
+        }
+      })
     }
   })
+  
+
 
 
   window.addEventListener('click', function(e){   
@@ -37,24 +50,21 @@ export default function NavBar() {
     }
   });
 
-
-
-
   return (
     <>
     <div className='NavBar PC'>
-      <ul>
+      <ul className='ulNavBar'>
         <li>
-          <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
+          <a className="link active odd" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
         </li>
         <li>
-          <a className="link" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
+          <a className="link even" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
         </li>
         <li>
-          <a className="link" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
+          <a className="link odd" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
         </li>
         <li>
-          <a className="link" href='#CONTACT' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
+          <a className="link even" href='#CONTACT' data-text="&nbsp;CONTACT">&nbsp;CONTACT&nbsp;&nbsp;&nbsp;</a>
         </li>
       </ul>
       <div className='Navbar__icons'>
