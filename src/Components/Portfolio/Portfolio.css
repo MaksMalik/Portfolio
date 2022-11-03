@@ -11,12 +11,42 @@
   scroll-snap-align: start;
   background-color: var(--background);
   overflow: hidden;
+  font-family: 'Anton', sans-serif;
 }
 
+.Portfolio-text {
+  position: absolute;
+  font-size: 200px;
+  z-index: 4;
+  color: rgb(19, 19, 19);
+  opacity: 0.4;
+  transform: rotate(-90deg);
+  transform: rotate(-90deg) translateY(-200px);
+  left: -270px;
+}
 
+.hiddenText {
+  opacity: 0;
+  filter: blur(5px);
+  transition: all 1s;
+  transition-delay: 100ms;
+}
+
+.showText {
+  opacity: 0.4;
+  filter: blur(0);
+  transition-delay: 100ms;
+  transform: rotate(-90deg) translateY(0px);
+}
 
 @media only screen and (max-width: 1000px) {
   .Portfolio {
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Portfolio-text {
+    display: none;
   }
 }

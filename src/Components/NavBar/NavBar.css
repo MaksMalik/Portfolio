@@ -27,6 +27,20 @@ ul {
   transition: all 0.2s;
 }
 
+.Logo {
+  position: fixed;
+  display: flex;
+  width: 200px;
+  justify-content: center;
+  z-index: 10;
+  background-image: url("./images/logo.png");
+  height: 200px;
+  width: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.02;
+}
+
 
 ul li {
   list-style: none;
@@ -96,7 +110,7 @@ ul li a::before {
   background-size: contain;
   background-repeat: no-repeat;
   transition-duration: 300ms;
-  opacity: 0.7;
+  opacity: 0.3;
 }
 
 .icon1 {
@@ -126,6 +140,10 @@ ul li a::before {
 
   ul li a {
     font-size: 20px;
+  }
+
+  .Logo {
+    display: none;
   }
   
 

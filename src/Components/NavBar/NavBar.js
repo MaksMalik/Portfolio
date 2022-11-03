@@ -53,6 +53,7 @@ export default function NavBar() {
   return (
     <>
     <div className='NavBar PC'>
+      <a href='#HOME'><div className='Logo'/></a>
       <ul className='ulNavBar'>
         <li>
           <a className="link active odd" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
