@@ -19,25 +19,17 @@
   font-size: 200px;
   z-index: 4;
   color: rgb(19, 19, 19);
-  opacity: 0.4;
+  opacity: 1;
   transform: rotate(-90deg);
   transform: rotate(-90deg) translateY(-200px);
   left: -270px;
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-.hiddenText {
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 1s;
-  transition-delay: 100ms;
-}
-
-.showText {
-  opacity: 0.4;
-  filter: blur(0);
-  transition-delay: 100ms;
-  transform: rotate(-90deg) translateY(0px);
-}
 
 @media only screen and (max-width: 1000px) {
   .Portfolio {

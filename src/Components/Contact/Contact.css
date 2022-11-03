@@ -10,7 +10,7 @@
   align-items: center;
   scroll-snap-align: start;
   background-color: rgb(19, 19, 19);
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 10px black;
   overflow: hidden;
   font-family: 'Anton', sans-serif;
 }
@@ -24,18 +24,21 @@
   transform: rotate(-90deg);
   left: -205px;
   transform: rotate(-90deg) translateY(-200px);
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .hiddenText {
   opacity: 0;
-  filter: blur(5px);
   transition: all 1s;
   transition-delay: 100ms;
 }
 
 .showText {
-  opacity: 0.4;
-  filter: blur(0);
+  opacity: 0.8;
   transition-delay: 100ms;
   transform: rotate(-90deg) translateY(0px);
 }
