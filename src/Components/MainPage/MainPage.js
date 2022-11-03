@@ -20,8 +20,8 @@ export default function MainPage() {
 
   function parallaxF(e) {
       this.querySelectorAll(".parallax").forEach(element => {
-/*         const speed = element.getAttribute("data-speed")
- */        const x = (window.innerWidth - 400 - e.pageX)/100
+/*      const speed = element.getAttribute("data-speed")
+ */     const x = (window.innerWidth - 400 - e.pageX)/100
         const y = (window.innerHeight - e.pageY)/200
         element.style.transform = `translateX(${x}px) translateY(${y}px)`
       })
@@ -46,8 +46,6 @@ export default function MainPage() {
       }
     })
   }
-  
-
 
   return (
     <section className='MainPage section' id='HOME'>
