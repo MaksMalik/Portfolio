@@ -8,7 +8,7 @@ import Contact from './Components/Contact/Contact';
 
 function App() {
 
-  const body = document.body
+/*   const body = document.body
 
   document.addEventListener('mousemove', (e) => {
     const el = document.createElement('div');
@@ -18,7 +18,7 @@ function App() {
       el.remove()
     }
     body.insertAdjacentElement('beforeend', el)
-  })
+  }) */
 
 
   return (
