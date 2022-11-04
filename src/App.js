@@ -2,9 +2,7 @@ import './App.css';
 import "./reset.css"
 import MainPage from './Components/MainPage/MainPage';
 import NavBar from './Components/NavBar/NavBar';
-import Skills from './Components/Skills/Skills';
-import Portfolio from './Components/Portfolio/Portfolio';
-import Contact from './Components/Contact/Contact';
+import Horizontals from './Components/Horizontals/Horizontals';
 
 function App() {
 
@@ -22,13 +20,11 @@ function App() {
 
 
   return (
-    <>
+    <div className='App'>
       <NavBar />
       <MainPage />
-      <Skills />
-      <Portfolio />
-      <Contact/>
-    </>
+      <Horizontals/>
+    </div>
 
   );
 }

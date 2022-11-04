@@ -1,5 +1,7 @@
 .Contact {
+  min-height: 100vh;
   height: 100vh;
+  min-width: calc(100vw - 200px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -8,11 +10,12 @@
   z-index: 1;
   justify-content: center;
   align-items: flex-end;
-  scroll-snap-align: start;
   background-color: rgb(19, 19, 19);
   box-shadow: 0 0 10px black;
   overflow: hidden;
   font-family: 'Anton', sans-serif;
+  scroll-snap-align: start;
+
 }
 
 .Contact-text {
@@ -88,7 +91,7 @@ label {
 }
 
 .show-scale {
-  transition-delay:550ms;
+  transition-delay: 550ms;
   transform: scaleY(1);
   opacity: 1;
 }
@@ -104,8 +107,9 @@ label {
 
 .button-send {
   min-height: 60px;
-/*   background-color: var(--blue) !important;
- */  border-radius: 0 !important;
+  /*   background-color: var(--blue) !important;
+ */
+  border-radius: 0 !important;
   letter-spacing: 4px !important;
   font-size: 15px;
   font-family: 'Fira Sans', sans-serif !important;
@@ -177,11 +181,11 @@ label {
 
 
 @media only screen and (max-width: 705px) {
-    .Contact-box-text span:nth-child(1) {
+  .Contact-box-text span:nth-child(1) {
     color: var(--blue);
     font-size: 50px;
   }
-  
+
   .Contact-box-text span:nth-child(2) {
     color: white;
     font-size: 25px;
@@ -200,7 +204,7 @@ label {
   .Contact-box-text span:nth-child(1) {
     font-size: 50px;
   }
-  
+
   .Contact-box-text span:nth-child(2) {
     font-size: 25px;
   }
@@ -212,10 +216,10 @@ label {
 }
 
 @media only screen and (max-width: 505px) {
-    .Contact-box-text span:nth-child(1) {
+  .Contact-box-text span:nth-child(1) {
     font-size: 40px;
   }
-  
+
   .Contact-box-text span:nth-child(2) {
     font-size: 20px;
   }
@@ -223,10 +227,10 @@ label {
 
 @media only screen and (max-width: 425px) {
   .Contact-box-text span:nth-child(1) {
-  font-size: 35px;
-}
+    font-size: 35px;
+  }
 
-.Contact-box-text span:nth-child(2) {
-  font-size: 15px;
-}
+  .Contact-box-text span:nth-child(2) {
+    font-size: 15px;
+  }
 }
