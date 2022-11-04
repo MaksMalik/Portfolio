@@ -43,23 +43,111 @@
 }
 
 .Contact-box {
-  margin: 50px 50px 50px 150px;
+  margin: 50px 50px 50px 250px;
   width: calc(100% - 280px);
   height: 100%;
-  background-color: var(--background);
-  transition-delay: 800ms;
+  transition-delay: 1500ms;
   transition: all 1s;
-  box-shadow: inset 0 0 10px black;
-  border: 1px solid rgba(17, 17, 17, 0.459);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+input::placeholder {
+  color: #fff !important;
+  border-color: red !important;
+
+}
+
+input {
+  color: #fff !important;
+  border-color: red !important;
+}
+
+.css-1sqnrkk-MuiInputBase-input-MuiOutlinedInput-input {
+  color: #fff !important;
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: rgba(255, 255, 255, 0.356) !important;
+}
+
+label {
+  color: rgba(255, 255, 255, 0.521) !important;
+}
+
+
+
+.hide-scale {
+  transform: scale(0)
+}
 .show-scale {
+  transition-delay:800ms;
   transform: scale(1);
 }
 
-.hide-scale {
-  transform: scale(0);
+
+.mainPageContact {
+  display: flex;
+  height: min-content;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 50px 0 50px 0;
+  box-shadow:
+    inset 0px 11px 8px -10px rgb(0, 0, 0),
+    inset 0px -11px 8px -10px rgb(0, 0, 0);
 }
+
+.mainPageContactRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainPageContact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+  height: 500px;
+  width: 600px
+}
+
+.button-send {
+  min-height: 60px;
+/*   background-color: var(--blue) !important;
+ */  border-radius: 0 !important;
+  letter-spacing: 4px !important;
+  font-size: 15px;
+  font-family: 'Fira Sans', sans-serif !important;
+  font-weight: 600 !important;
+  color: var(--background) !important;
+}
+
+.Contact-box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.Contact-box-text span:nth-child(1) {
+  color: var(--blue);
+  font-size: 60px;
+}
+
+.Contact-box-text span:nth-child(2) {
+  color: white;
+  font-size: 30px;
+}
+
+
+
+
 
 
 
