@@ -1,7 +1,5 @@
-.Portfolio {
-  min-height: 100vh;
+.Skills {
   height: 100vh;
-  min-width: calc(100vw - 200px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,22 +8,21 @@
   z-index: 1;
   justify-content: center;
   align-items: flex-end;
-  background-color: var(--background);
+  scroll-snap-align: start;
+  background-color: rgb(19, 19, 19);
+  box-shadow: 0 0 10px black;
   overflow: hidden;
   font-family: 'Anton', sans-serif;
-  scroll-snap-align: start;
-
 }
 
-.Portfolio-text {
+.Skills-text {
   position: absolute;
   font-size: 200px;
   z-index: 4;
-  color: rgb(19, 19, 19);
-  opacity: 1;
-  transform: rotate(-90deg);
+  color: var(--background);
+  opacity: 0.4;
   transform: rotate(-90deg) translateY(-200px);
-  left: -270px;
+  left: -130px;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -33,30 +30,23 @@
   user-select: none;
 }
 
-.Portfolio-box {
+.Skills-box {
   margin: 50px 50px 50px 150px;
   width: calc(100% - 280px);
   height: 100%;
   transition: all 1s;
 }
 
-.hide-scale {
-  transform: scaleY(0)
-}
-
-.show-scale {
-  transform: scaleY(1);
-}
-
 
 @media only screen and (max-width: 1000px) {
-  .Portfolio {
+  .Skills {
     margin: 0;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .Portfolio-text {
+  .Sills-text {
     display: none;
   }
 }
+

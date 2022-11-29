@@ -141,24 +141,40 @@ ul li a::before {
 }
 
 
-
 @media only screen and (max-width: 1000px) {
-  .PC{
-    display: none;
+  ul {
+    width: 100vw;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  ul li a {
+    font-size: 20px;
   }
 
   .Logo {
     display: none;
   }
+  
+
 
   .Navbar__icons {
+    width: 100vw;
     height: 50px;
     align-items: center;
     justify-content: flex-end;
   }
 
+
   .icon2 {
     margin: 0 20px 0 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .PC{
+    display: none;
   }
 
   .Navbar__icons {
