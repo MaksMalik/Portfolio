@@ -1,7 +1,7 @@
 :root {
-  --blue: rgb(35, 179, 204);
+  --blue: #23b3cc;
   --red: rgb(116, 18, 18);
-  --background: rgb(24, 24, 24);
+  --background: #181818;
 }
 
 .section::-webkit-scrollbar {
