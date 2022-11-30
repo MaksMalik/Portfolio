@@ -17,7 +17,6 @@ function Router() {
         </Routes>
       </BrowserRouter>
     </>
-
   );
 }
 
