@@ -6,7 +6,6 @@ import {
   Navigate
 } from "react-router-dom";
 
-
 function Router() {
 
   return (
