@@ -254,5 +254,9 @@ label {
 } */
 
 .css-igs3ac {
-  border-color: #ffffff33 !important;
+  border-color: var(--blue) !important;
+}
+
+.css-u36398 {
+  color: white !important;
 }
