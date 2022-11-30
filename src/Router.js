@@ -3,6 +3,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
 
@@ -12,10 +13,10 @@ function Router() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<App />}></Route>
+          <Route path="/" element={<App />}></Route>
+          <Route path="/*" element={<Navigate to="/"/>}></Route>
         </Routes>
       </BrowserRouter>
-      <App />
     </>
 
   );
