@@ -231,6 +231,7 @@ label {
     font-size: 15px;
   }
 }
+
 /* 
 .Contact-map-box {
   display: flex;
@@ -251,3 +252,7 @@ label {
 
 
 } */
+
+.css-igs3ac {
+  border-color: #ffffff33 !important;
+}
