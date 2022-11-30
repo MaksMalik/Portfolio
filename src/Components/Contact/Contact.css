@@ -82,14 +82,12 @@ label {
 
 
 .hide-scale {
-  transform: scaleY(0);
-  opacity: 0;
+  transform: scale(0);
 }
 
 .show-scale {
   transition-delay: 550ms;
-  transform: scaleY(1);
-  opacity: 1;
+  transform: scale(1);
 }
 
 .mainPageContact-form {

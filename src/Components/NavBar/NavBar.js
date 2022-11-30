@@ -8,8 +8,8 @@ export default function NavBar() {
   useEffect(() => {
     const sections = document.querySelectorAll("section")
     const links = document.querySelectorAll(".link")
-    const navBar = document.querySelector(".ulNavBar")
-
+/*     const navBar = document.querySelector(".ulNavBar")
+ */
     window.onscroll = function () {
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
@@ -30,14 +30,14 @@ export default function NavBar() {
         }
       })
       
-      links.forEach((element) => {
+      /* links.forEach((element) => {
         if (element.style.color === "white" && element.classList.contains("even")) {
           navBar.style.backgroundColor = "var(--background)"
         }
         if (element.style.color === "white" && element.classList.contains("odd")) {
           navBar.style.backgroundColor = "rgb(19, 19, 19)"
         }
-      })
+      }) */
     }
   })
   
