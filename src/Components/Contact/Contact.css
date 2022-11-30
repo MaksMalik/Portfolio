@@ -10,7 +10,6 @@
   align-items: flex-end;
   scroll-snap-align: start;
   background-color: rgb(19, 19, 19);
-  box-shadow: 0 0 5px black;
   overflow: hidden;
   font-family: 'Anton', sans-serif;
 }
