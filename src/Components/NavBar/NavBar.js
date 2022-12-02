@@ -4,9 +4,10 @@ import "./NavBar.css"
 export default function NavBar() {
 
   const [currentPage, setCurrentPage] = useState("HOME")
+  const [sections, setSections] = useState(document.querySelectorAll("section"))
 
   useEffect(() => {
-    const sections = document.querySelectorAll("section")
+    setSections(document.querySelectorAll("section"))
     const links = document.querySelectorAll(".link")
 /*     const navBar = document.querySelector(".ulNavBar")
  */
@@ -30,7 +31,7 @@ export default function NavBar() {
         }
       })
 
- /*      links.forEach((element) => {
+/*       links.forEach((element) => {
         if (element.style.color === "white" && element.classList.contains("even")) {
           navBar.style.backgroundColor = "var(--background)"
         }
@@ -39,7 +40,7 @@ export default function NavBar() {
         }
       }) */
     }
-  })
+  }, [sections, currentPage, setSections])
 
 
 

@@ -27,17 +27,20 @@ export default function Contact() {
             <span className='hide-scale hide-scale-mobile'>Fell free to ask questions, send proposes</span>
           </div>
           <ThemeProvider theme={blue}>
-            <div className="mainPageContact-form hide-scale hide-scale-mobile">
+            <div className="mainPageContact-form">
               <TextField
+                className='hide-scale hide-scale-mobile'
                 required
                 id="outlined-required"
                 label="E-mail"
               />
               <TextField
+                className='hide-scale hide-scale-mobile'
                 id="outlined"
                 label="Phone number"
               />
               <TextField
+                className='hide-scale hide-scale-mobile'
                 required
                 id="outlined-multiline-static"
                 label="Message"
