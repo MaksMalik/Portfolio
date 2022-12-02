@@ -79,10 +79,10 @@ label {
 
 .hide-scale {
   transform: scale(0);
+  transition-delay: 300ms;
 }
 
 .show-scale {
-  transition-delay: 550ms;
   transform: scale(1);
 }
 
@@ -166,6 +166,18 @@ label {
     height: 500px;
     margin: auto;
     width: calc(100vw - 200px);
+  }
+
+  .hide-scale {
+    transform: scale(1);
+    opacity: 0;
+    filter: blur(50px);
+  }
+
+  .show-scale {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
   }
 }
 
