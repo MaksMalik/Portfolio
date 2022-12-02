@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./MainPage.css"
 
 export default function MainPage() {
@@ -47,9 +47,27 @@ export default function MainPage() {
     })
   }
 
+
+
+
+  useEffect(() => {
+    const triangleParallax = document.querySelectorAll(".parallaxTriangle")
+    const textParallax = document.querySelectorAll(".NameText")
+    window.onscroll = function () {
+      let value = window.scrollY
+      triangleParallax.forEach((item) => {
+        item.style.cssText = `translate: 0 ${-value}px`
+      })
+
+      textParallax.forEach((item) => {
+        item.style.cssText = `translate: 0 ${value * 0.5}px`
+      })
+    }
+  })
+
   return (
     <section className='MainPage section' id='HOME'>
-      <div className='NameText'>
+      <div className='NameText' id='NameText'>
         <div>
           <span className='Name'>H</span>
           <span className='Name'>i</span>

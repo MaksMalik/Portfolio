@@ -20,7 +20,6 @@
   z-index: 4;
   color: var(--background);
   opacity: 0.4;
-  transform: rotate(-90deg);
   left: -205px;
   transform: rotate(-90deg) translateY(-200px);
   cursor: default;
