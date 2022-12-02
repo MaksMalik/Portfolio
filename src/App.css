@@ -51,12 +51,12 @@ html {
   float: none !important;
 }
 
-/* @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   html {
     -ms-scroll-snap-type: none;
         scroll-snap-type: none;
   }
-} */
+}
 
 
 
@@ -126,10 +126,4 @@ html {
   100% {
     transform: scale(2);
   }
-}
-
-
-@media (hover: none) and (pointer: coarse) {
-  -ms-scroll-snap-type: none;
-  scroll-snap-type: none;
 }
