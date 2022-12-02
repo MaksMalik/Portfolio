@@ -63,7 +63,7 @@ export default function MainPage() {
         let value = window.scrollY
         if (viewportWidth > 768) {
           triangleParallax.forEach((item) => {
-            item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 150}`
+            item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 100}`
           })
         }
 
