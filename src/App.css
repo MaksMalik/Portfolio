@@ -1,7 +1,13 @@
 :root {
   --blue: #23b3cc;
-  --red: rgb(116, 18, 18);
+  --red: #741212;
   --background: #181818;
+  --background2: #131313;
+
+/*   --blue: #B9732f;
+  --red: #741212;
+  --background: #ffffff;
+  --background2: #437FC7; */
 }
 
 .section::-webkit-scrollbar {
@@ -43,6 +49,7 @@
 
 html {
   scroll-behavior: smooth;
+  background: var(--background);
   font-family: 'Anton', sans-serif;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;
@@ -54,7 +61,7 @@ html {
 @media only screen and (max-width: 768px) {
   html {
     -ms-scroll-snap-type: none;
-        scroll-snap-type: none;
+    scroll-snap-type: none;
   }
 }
 

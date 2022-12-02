@@ -154,7 +154,7 @@
 
 .rubberBand {
   -webkit-animation: rubberBand 1s linear;
-          animation: rubberBand 1s linear;
+  animation: rubberBand 1s linear;
 }
 
 .button {}
@@ -202,14 +202,14 @@
   bottom: 30px;
   flex-direction: column;
   -webkit-animation: upAndDown 1s infinite forwards;
-          animation: upAndDown 1s infinite forwards;
+  animation: upAndDown 1s infinite forwards;
 }
 
 .scroll i {
   color: white;
   font-size: 20px;
   -webkit-animation: rubberBand 1s linear infinite;
-          animation: rubberBand 1s linear infinite;
+  animation: rubberBand 1s linear infinite;
 }
 
 @-webkit-keyframes upAndDown {
@@ -254,23 +254,23 @@
   width: 500px;
   height: 500px;
   position: absolute;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--background2);
   z-index: 3;
   transform: rotate(45deg);
   left: -250px;
-  box-shadow:  0 0 10px black;
-  z-index: -20;
+  box-shadow: 0 0 10px black;
+  z-index: 0;
 }
 
 .triangle-right {
   width: 500px;
   height: 500px;
   position: absolute;
-  background-color: rgb(19, 19, 19);
+  background-color: var(--background2);
   z-index: 3;
   transform: rotate(45deg);
   right: -250px;
-  box-shadow:  0 0 10px black;
+  box-shadow: 0 0 10px black;
 }
 
 .backgroundReversed {
@@ -290,7 +290,7 @@
     height: 300px;
     right: -150px;
   }
-  
+
 }
 
 
@@ -373,12 +373,15 @@
     width: 100px;
     height: 100px;
     left: -50px;
+    z-index: -20;
+
   }
 
   .triangle-right {
     width: 100px;
     height: 100px;
     right: -50px;
+    z-index: -19;
   }
 }
 
@@ -403,6 +406,6 @@
     color: white;
     font-size: 25px;
     -webkit-animation: rubberBand 1s linear infinite;
-            animation: rubberBand 1s linear infinite;
+    animation: rubberBand 1s linear infinite;
   }
 }
