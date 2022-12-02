@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./MainPage.css"
 
 export default function MainPage() {
@@ -11,31 +11,30 @@ export default function MainPage() {
   }) */
 
 
-  if (("ontouchstart" in document.documentElement))
-  {}
-  else{
-  document.addEventListener("mousemove", parallaxF)
-  const body = document.body
+  if (("ontouchstart" in document.documentElement)) { }
+  else {
+    document.addEventListener("mousemove", parallaxF)
+    const body = document.body
 
 
-  function parallaxF(e) {
+    function parallaxF(e) {
       this.querySelectorAll(".parallax").forEach(element => {
 /*      const speed = element.getAttribute("data-speed")
- */     const x = (window.innerWidth - 400 - e.pageX)/100
-        const y = (window.innerHeight - e.pageY)/200
+ */     const x = (window.innerWidth - 400 - e.pageX) / 100
+        const y = (window.innerHeight - e.pageY) / 200
         element.style.transform = `translateX(${x}px) translateY(${y}px)`
       })
 
-/*       this.querySelectorAll(".parallaxTriangle").forEach(element => {
-        const speed = element.getAttribute("data-speed")
-        const x = (window.innerWidth - e.pageX*speed)/1000
-        const y = (window.innerHeight - e.pageY*speed)/1000
-        element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
-      }) */
+      /*       this.querySelectorAll(".parallaxTriangle").forEach(element => {
+              const speed = element.getAttribute("data-speed")
+              const x = (window.innerWidth - e.pageX*speed)/1000
+              const y = (window.innerHeight - e.pageY*speed)/1000
+              element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
+            }) */
     }
 
     document.addEventListener('mousemove', (e) => {
-      if(window.matchMedia("(pointer: coarse)").matches) {
+      if (window.matchMedia("(pointer: coarse)").matches) {
         const el = document.createElement('div');
         el.setAttribute('class', 'trail')
         el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
@@ -49,6 +48,7 @@ export default function MainPage() {
 
 
 
+  const [currentPage, setCurrentPage] = useState("HOME")
 
   useEffect(() => {
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
@@ -56,13 +56,39 @@ export default function MainPage() {
     window.onscroll = function () {
       let value = window.scrollY
       triangleParallax.forEach((item) => {
-        item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value/150}`
+        item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 150}`
       })
 
       textParallax.forEach((item) => {
         item.style.cssText = `translate: 0 ${value * 0.5}px`
       })
+
+      const sections = document.querySelectorAll("section")
+      const links = document.querySelectorAll(".link")
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 200) {
+          setCurrentPage(section.getAttribute("id"))
+        }
+      })
+
+      links.forEach((item) => {
+        item.style.cssText = "color: white"
+        if (item.href.includes(currentPage)) {
+          item.style.cssText = "color: white";
+          item.classList.remove("active")
+
+        }
+        else {
+          item.style = "color: transparent"
+        }
+      })
+
+
     }
+
+
   })
 
   return (
@@ -103,19 +129,19 @@ export default function MainPage() {
           <span className='Name'>e</span>
           <span className='Name'>r</span>
         </div>
-      <div className='button'>
-        <a href='#CONTACT'>
-          CONTACT ME
-        </a>
-        <a href="/Maksymilian_Malik_CV.pdf" download="Maksymilian_Malik_CV.pdf">
-          DOWNLOAD CV
-          <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
-        </a>
-      </div>
+        <div className='button'>
+          <a href='#CONTACT'>
+            CONTACT ME
+          </a>
+          <a href="/Maksymilian_Malik_CV.pdf" download="Maksymilian_Malik_CV.pdf">
+            DOWNLOAD CV
+            <i className="fa-sharp fa-solid fa-file-arrow-down"></i>
+          </a>
+        </div>
       </div>
 
 
-        
+
 
       <div className='scroll'>
         <a href='#SKILLS'>

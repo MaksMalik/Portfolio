@@ -1,49 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "./NavBar.css"
 
 export default function NavBar() {
 
-  const [currentPage, setCurrentPage] = useState("HOME")
-  const [sections, setSections] = useState(document.querySelectorAll("section"))
-
-  useEffect(() => {
-    setSections(document.querySelectorAll("section"))
-    const links = document.querySelectorAll(".link")
-/*     const navBar = document.querySelector(".ulNavBar")
- */
-    window.onscroll = function () {
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 200) {
-          setCurrentPage(section.getAttribute("id"))
-        }
-      })
-
-      links.forEach((item) => {
-        item.style.cssText = "color: white"
-        if (item.href.includes(currentPage)) {
-          item.style.cssText = "color: white";
-          item.classList.remove("active")
-
-        }
-        else {
-          item.style = "color: transparent"
-        }
-      })
-
-/*       links.forEach((element) => {
-        if (element.style.color === "white" && element.classList.contains("even")) {
-          navBar.style.backgroundColor = "var(--background)"
-        }
-        if (element.style.color === "white" && element.classList.contains("odd")) {
-          navBar.style.backgroundColor = "rgb(19, 19, 19)"
-        }
-      }) */
-    }
-  }, [sections, currentPage, setSections])
-
-
-
+  
 
   window.addEventListener('click', function (e) {
     if (!document.getElementById('navbarMm').contains(e.target)) {

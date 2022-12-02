@@ -78,18 +78,18 @@ label {
 
 
 .hide-scale {
-  transform: scale(1.2);
-  opacity: 1;
-  filter: blur(10px);
-  transition: all 1s;
+  transform: scale(1.2) !important;
+  opacity: 1 !important;
+  filter: blur(10px) !important;
+  transition: all 1s !important;
 }
 
 .show-scale {
-  transition: all 1s;
-  transition-delay: 300ms;
-  transform: scale(1);
-  opacity: 1;
-  filter: blur(0px);
+  transition: all 1s !important;
+  transition-delay: 300ms !important;
+  transform: scale(1) !important;
+  opacity: 1 !important;
+  filter: blur(0px) !important;
 }
 
 .mainPageContact-form {
@@ -176,18 +176,18 @@ label {
 
 
   .hide-scale-mobile {
-    transform: scale(1.2);
-    opacity: 1;
-    filter: blur(10px);
+    transform: scale(1.2) ;
+    opacity: 1 ;
+    filter: blur(10px) ;
     transition: all 1s;
   }
 
   .show-scale-mobile {
-    transition: all 1s;
-    transition-delay: 300ms;
-    transform: scale(1);
-    opacity: 1;
-    filter: blur(0px);
+    transition: all 1s !important;
+    transition-delay: 300ms !important;
+    transform: scale(1) !important;
+    opacity: 1 !important;
+    filter: blur(0px) !important;
   }
 }
 
