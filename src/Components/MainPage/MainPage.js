@@ -56,45 +56,51 @@ export default function MainPage() {
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
     const textParallax = document.querySelectorAll(".NameText")
     
-    window.onscroll = function () {
-      let value = window.scrollY
-      if (viewportWidth > 768) {
-        triangleParallax.forEach((item) => {
-          item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 150}`
+    const onScrollFunction = () => {
+
+    
+      window.onscroll = function () {
+        let value = window.scrollY
+        if (viewportWidth > 768) {
+          triangleParallax.forEach((item) => {
+            item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 150}`
+          })
+        }
+
+
+        textParallax.forEach((item) => {
+          item.style.cssText = `translate: 0 ${-value * 0.5}px`
         })
+
+        const sections = document.querySelectorAll("section")
+        const links = document.querySelectorAll(".link")
+
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          if (window.pageYOffset >= sectionTop - 200) {
+            setCurrentPage(section.getAttribute("id"))
+          }
+        })
+
+        links.forEach((item) => {
+          item.style.cssText = "color: white"
+          if (item.href.includes(currentPage)) {
+            item.style.cssText = "color: white";
+            item.classList.remove("active")
+
+          }
+          else {
+            item.style = "color: transparent"
+          }
+        })
+
+        
+        
       }
-
-
-         textParallax.forEach((item) => {
-            item.style.cssText = `translate: 0 ${-value * 0.5}px`
-          }) 
-
-      const sections = document.querySelectorAll("section")
-      const links = document.querySelectorAll(".link")
-
-      sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        if (window.pageYOffset >= sectionTop - 200) {
-          setCurrentPage(section.getAttribute("id"))
-        }
-      })
-
-      links.forEach((item) => {
-        item.style.cssText = "color: white"
-        if (item.href.includes(currentPage)) {
-          item.style.cssText = "color: white";
-          item.classList.remove("active")
-
-        }
-        else {
-          item.style = "color: transparent"
-        }
-      })
-
-
+      
+      
     }
-
-
+    requestAnimationFrame(onScrollFunction)
   })
 
   return (
