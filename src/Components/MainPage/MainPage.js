@@ -69,7 +69,7 @@ export default function MainPage() {
 
 
         textParallax.forEach((item) => {
-          item.style.cssText = `translate: 0 ${-value * 0.5}px`
+          item.style.cssText = `translate: 0 ${-value * 0.44}px`
         })
 
         const sections = document.querySelectorAll("section")
