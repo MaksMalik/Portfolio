@@ -321,6 +321,12 @@
     height: 140px;
     left: -70px;
   }
+  
+  .parallaxTriangle {
+    position: fixed;
+    transform: rotate(45deg) translate(0, 0) !important;
+  }
+
 
   .triangle-right {
     width: 140px;
