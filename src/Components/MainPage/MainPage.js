@@ -52,16 +52,16 @@ export default function MainPage() {
 
   useEffect(() => {
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
-    const textParallax = document.querySelectorAll(".NameText")
-    window.onscroll = function () {
+/*     const textParallax = document.querySelectorAll(".NameText")
+ */    window.onscroll = function () {
       let value = window.scrollY
       triangleParallax.forEach((item) => {
         item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 150}`
       })
 
-      textParallax.forEach((item) => {
+  /*     textParallax.forEach((item) => {
         item.style.cssText = `translate: 0 ${value * 0.5}px`
-      })
+      }) */
 
       const sections = document.querySelectorAll("section")
       const links = document.querySelectorAll(".link")
