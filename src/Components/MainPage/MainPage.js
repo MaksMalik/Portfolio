@@ -56,7 +56,7 @@ export default function MainPage() {
     window.onscroll = function () {
       let value = window.scrollY
       triangleParallax.forEach((item) => {
-        item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value/200}`
+        item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value/150}`
       })
 
       textParallax.forEach((item) => {
@@ -123,8 +123,8 @@ export default function MainPage() {
         </a>
       </div>
 
-      <div className='triangle-left parallaxTriangle' data-speed="4"></div>
       <div className='triangle-right parallaxTriangle' data-speed="4"></div>
+      <div className='triangle-left parallaxTriangle' data-speed="4"></div>
 
     </section>
   )

@@ -259,6 +259,7 @@
   transform: rotate(45deg);
   left: -250px;
   box-shadow:  0 0 10px black;
+  z-index: -20;
 }
 
 .triangle-right {
