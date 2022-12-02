@@ -56,7 +56,7 @@ export default function MainPage() {
     window.onscroll = function () {
       let value = window.scrollY
       triangleParallax.forEach((item) => {
-        item.style.cssText = `translate: 0 ${-value}px`
+        item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value/200}`
       })
 
       textParallax.forEach((item) => {
