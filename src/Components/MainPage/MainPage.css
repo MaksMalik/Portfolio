@@ -321,7 +321,7 @@
     height: 140px;
     left: -70px;
   }
-  
+
   .parallaxTriangle {
     position: fixed;
     transform: rotate(45deg) translate(0, 0) !important;
@@ -332,6 +332,24 @@
     width: 140px;
     height: 140px;
     right: -70px;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(5) {
+    text-shadow: none;
+  }
+
+  .NameText div:nth-child(2) span:nth-child(6) {
+    text-shadow: none;
+
+  }
+
+  .NameText div:nth-child(2) span:nth-child(7) {
+    text-shadow: none;
+
+  }
+
+  .NameText div:nth-child(2) span:nth-child(8) {
+    text-shadow: none;
   }
 }
 

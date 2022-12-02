@@ -54,8 +54,8 @@ export default function MainPage() {
 
     let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
-    /*     const textParallax = document.querySelectorAll(".NameText")
-     */
+    const textParallax = document.querySelectorAll(".NameText")
+    
     window.onscroll = function () {
       let value = window.scrollY
       if (viewportWidth > 768) {
@@ -65,9 +65,9 @@ export default function MainPage() {
       }
 
 
-      /*     textParallax.forEach((item) => {
-            item.style.cssText = `translate: 0 ${value * 0.5}px`
-          }) */
+         textParallax.forEach((item) => {
+            item.style.cssText = `translate: 0 ${-value * 0.5}px`
+          }) 
 
       const sections = document.querySelectorAll("section")
       const links = document.querySelectorAll(".link")
