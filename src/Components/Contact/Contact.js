@@ -23,11 +23,11 @@ export default function Contact() {
         </div>
         <div>
           <div className='Contact-box-text'>
-            <span>Send me a message!</span>
-            <span>Fell free to ask questions, send proposes</span>
+            <span className='hide-scale hide-scale-mobile'>Send me a message!</span>
+            <span className='hide-scale hide-scale-mobile'>Fell free to ask questions, send proposes</span>
           </div>
           <ThemeProvider theme={blue}>
-            <div className="mainPageContact-form">
+            <div className="mainPageContact-form hide-scale hide-scale-mobile">
               <TextField
                 required
                 id="outlined-required"
@@ -44,7 +44,7 @@ export default function Contact() {
                 multiline
                 rows={6}
               />
-              <Button variant="contained" className="button-send">Send message</Button>
+              <Button variant="contained" className="button-send hide-scale hide-scale-mobile">Send message</Button>
             </div>
           </ThemeProvider>
         </div>

@@ -78,12 +78,18 @@ label {
 
 
 .hide-scale {
-  transform: scale(0);
-  transition-delay: 300ms;
+  transform: scale(1.2);
+  opacity: 1;
+  filter: blur(10px);
+  transition: all 1s;
 }
 
 .show-scale {
+  transition: all 1s;
+  transition-delay: 300ms;
   transform: scale(1);
+  opacity: 1;
+  filter: blur(0px);
 }
 
 .mainPageContact-form {
@@ -168,13 +174,17 @@ label {
     width: calc(100vw - 200px);
   }
 
-  .hide-scale {
-    transform: scale(1);
-    opacity: 0;
-    filter: blur(50px);
+
+  .hide-scale-mobile {
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(10px);
+    transition: all 1s;
   }
 
-  .show-scale {
+  .show-scale-mobile {
+    transition: all 1s;
+    transition-delay: 300ms;
     transform: scale(1);
     opacity: 1;
     filter: blur(0px);

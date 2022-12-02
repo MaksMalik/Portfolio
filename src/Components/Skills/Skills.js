@@ -9,8 +9,16 @@ export default function Skills() {
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) { entry.target.classList.add('showText') }
-/*           else {entry.target.classList.remove('showText')}
- */        })
+          else { entry.target.classList.remove('showText') }
+        })
+      })
+
+    const observerScaleMobile = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) { entry.target.classList.add('showText') }
+          else { entry.target.classList.remove('showText') }
+        })
       })
 
     const hiddenElementSkill = document.querySelectorAll('.hiddenText');
@@ -18,13 +26,18 @@ export default function Skills() {
       observer.observe(el)
     })
 
+    const hiddenScaleMobile = document.querySelectorAll('.hide-scale-mobile');
+    hiddenScaleMobile.forEach((el) => {
+      observerScaleMobile.observe(el)
+    })
+
 
     const observerScale = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) { entry.target.classList.add('show-scale') }
-/*           else {entry.target.classList.remove('show-scale')}
- */        })
+          else { entry.target.classList.remove('show-scale') }
+        })
       })
 
     const hiddenElementScale = document.querySelectorAll('.hide-scale');
