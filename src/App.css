@@ -66,8 +66,8 @@ html {
   border-radius: 50%;
   position: fixed;
   -webkit-animation: trail 0.5s forwards;
-          animation: trail 0.5s forwards;
-          z-index: 5;
+  animation: trail 0.5s forwards;
+  z-index: 5;
 }
 
 @-webkit-keyframes trail {
@@ -83,7 +83,7 @@ html {
   }
 
   100% {
-    transform: scale(0) ;
+    transform: scale(0);
     opacity: 0;
   }
 }
@@ -101,7 +101,7 @@ html {
   }
 
   100% {
-    transform: scale(0) ;
+    transform: scale(0);
     opacity: 0;
   }
 }
@@ -126,4 +126,10 @@ html {
   100% {
     transform: scale(2);
   }
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  -ms-scroll-snap-type: none;
+  scroll-snap-type: none;
 }
