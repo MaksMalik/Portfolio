@@ -11,26 +11,19 @@ export default function MainPage() {
   }) */
 
 
-  if (("ontouchstart" in document.documentElement)) { }
-  else {
-    document.addEventListener("mousemove", parallaxF)
+/*  
     const body = document.body
 
 
     function parallaxF(e) {
       this.querySelectorAll(".parallax").forEach(element => {
-/*      const speed = element.getAttribute("data-speed")
- */     const x = (window.innerWidth - 400 - e.pageX) / 100
-        const y = (window.innerHeight - e.pageY) / 200
+        const speed = element.getAttribute("data-speed")
+        const x = (window.innerWidth - e.pageX * speed) / 1000
+        const y = (window.innerHeight - e.pageY * speed) / 1000
         element.style.transform = `translateX(${x}px) translateY(${y}px)`
       })
 
-      /*       this.querySelectorAll(".parallaxTriangle").forEach(element => {
-              const speed = element.getAttribute("data-speed")
-              const x = (window.innerWidth - e.pageX*speed)/1000
-              const y = (window.innerHeight - e.pageY*speed)/1000
-              element.style.transform = `translateX(${x}px) translateY(${y}px) rotate(45deg)`
-            }) */
+
     }
 
     document.addEventListener('mousemove', (e) => {
@@ -44,7 +37,12 @@ export default function MainPage() {
         body.insertAdjacentElement('beforeend', el)
       }
     })
-  }
+  
+  if (("ontouchstart" in document.documentElement)) {  }
+  else {
+    document.addEventListener("mousemove", parallaxF)
+  } */
+  
 
 
 
@@ -52,55 +50,47 @@ export default function MainPage() {
 
   useEffect(() => {
 
-    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
     const textParallax = document.querySelectorAll(".NameText")
-    
-    const onScrollFunction = () => {
-
-    
-      window.onscroll = function () {
-        let value = window.scrollY
-        if (viewportWidth > 768) {
-          triangleParallax.forEach((item) => {
-            item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 100}`
-          })
-        }
+    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 
-        textParallax.forEach((item) => {
-          item.style.cssText = `translate: 0 ${-value * 0.44}px`
+    window.onscroll = function () {
+      let value = window.scrollY
+      if (viewportWidth > 768) {
+        triangleParallax.forEach((item) => {
+          item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 100}`
         })
-
-        const sections = document.querySelectorAll("section")
-        const links = document.querySelectorAll(".link")
-
-        sections.forEach((section) => {
-          const sectionTop = section.offsetTop;
-          if (window.pageYOffset >= sectionTop - 200) {
-            setCurrentPage(section.getAttribute("id"))
-          }
-        })
-
-        links.forEach((item) => {
-          item.style.cssText = "color: white"
-          if (item.href.includes(currentPage)) {
-            item.style.cssText = "color: white";
-            item.classList.remove("active")
-
-          }
-          else {
-            item.style = "color: transparent"
-          }
-        })
-
-        
-        
       }
-      
-      
+      console.log("heheh")
+
+
+
+      textParallax.forEach((item) => {
+        item.style.cssText = `translate: 0 ${-value * 0.4}px`
+      })
+
+      const sections = document.querySelectorAll("section")
+      const links = document.querySelectorAll(".link")
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        if (window.pageYOffset >= sectionTop - 200) {
+          setCurrentPage(section.getAttribute("id"))
+        }
+      })
+
+      links.forEach((item) => {
+        item.style.cssText = "color: white"
+        if (item.href.includes(currentPage)) {
+          item.style.cssText = "color: white";
+          item.classList.remove("active")
+        }
+        else {
+          item.style = "color: transparent"
+        }
+      })
     }
-    requestAnimationFrame(onScrollFunction)
   })
 
   return (
