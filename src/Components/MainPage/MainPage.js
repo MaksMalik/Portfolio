@@ -38,7 +38,7 @@ export default function MainPage() {
       }
     })
   
-  if (("ontouchstart" in document.documentElement)) {  }
+  if (("ontouchstart" in document.documentElement)) { }
   else {
     document.addEventListener("mousemove", parallaxF)
   } */
@@ -67,7 +67,7 @@ export default function MainPage() {
 
 
       textParallax.forEach((item) => {
-        item.style.cssText = `translate: 0 ${-value * 0.4}px`
+        item.style.cssText = `translate: 0 ${-value * 0.42}px`
       })
 
       const sections = document.querySelectorAll("section")
