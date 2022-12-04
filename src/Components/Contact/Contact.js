@@ -21,6 +21,7 @@ export default function Contact() {
   const [currentWholeEmail, setCurrentWholeEmail] = useState(
     {
       currentEmail: "",
+      currentName: "",
       currentPhone: "",
       currentMessage: ""
     }
@@ -36,6 +37,7 @@ export default function Contact() {
       .then(() => {
         setCurrentWholeEmail({
           currentEmail: "",
+          currentName: "",
           currentPhone: "",
           currentMessage: ""
         })
@@ -75,6 +77,15 @@ export default function Contact() {
                 name="email"
                 value={currentWholeEmail.currentEmail || ""}
                 onChange={(e) => setCurrentWholeEmail({ ...currentWholeEmail, currentEmail: e.target.value })}
+              />
+              <TextField
+                required
+                id="outlined-required"
+                label="Name"
+                type='text'
+                name="name"
+                value={currentWholeEmail.currentName || ""}
+                onChange={(e) => setCurrentWholeEmail({ ...currentWholeEmail, currentName: e.target.value })}
               />
               <TextField
                 id="outlined"

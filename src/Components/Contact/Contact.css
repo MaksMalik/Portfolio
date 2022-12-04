@@ -117,6 +117,7 @@ label {
   font-weight: 600 !important;
   color: rgba(0, 0, 0, 0.658) !important;
   transition: all 1s !important;
+  border-radius: 0 !important;
 }
 
 .Contact-box-text {
