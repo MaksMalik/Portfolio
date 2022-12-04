@@ -397,7 +397,6 @@
     width: 100px;
     height: 100px;
     left: -50px;
-    z-index: -20;
 
   }
 
@@ -405,7 +404,6 @@
     width: 100px;
     height: 100px;
     right: -50px;
-    z-index: -19;
   }
 }
 

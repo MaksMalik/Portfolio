@@ -21,7 +21,7 @@
   color: var(--background);
   opacity: 0.4;
   left: -205px;
-  transform: rotate(-90deg) translateY(-200px);
+  transform: rotate(-90deg);
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -37,7 +37,6 @@
 
 .showText {
   opacity: 0.8;
-  transform: rotate(-90deg) translateY(0px);
 }
 
 .Contact-box {
@@ -176,9 +175,9 @@ label {
 
 
   .hide-scale-mobile {
-    transform: scale(1.2) ;
-    opacity: 1 ;
-    filter: blur(5px) ;
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(5px);
     transition: all 1s;
   }
 

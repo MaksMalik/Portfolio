@@ -21,13 +21,14 @@
   z-index: 4;
   color: var(--background);
   opacity: 0.4;
-  transform: rotate(-90deg) translateY(-200px);
   left: -130px;
   cursor: default;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  transform: rotate(-90deg) translateY(0px);
+
 }
 
 .Skills-box {

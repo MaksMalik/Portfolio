@@ -15,7 +15,7 @@ export default function Contact() {
 
   return (
     <section className='Contact section' id='CONTACT'>
-      <div className='Contact-text hiddenText' id='Contact-box'>CONTACT</div>
+      <div className='Contact-text showText' id='Contact-box'>CONTACT</div>
 
       <div className='Contact-box hide-scale'>
         <div className='Contact-map-box'>

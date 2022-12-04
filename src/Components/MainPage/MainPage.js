@@ -3,7 +3,10 @@ import "./MainPage.css"
 
 export default function MainPage() {
 
-  /* document.addEventListener('mouseover', (e) => {
+  /* RUBBER BAND
+  
+  
+    document.addEventListener('mouseover', (e) => {
     e.target.classList.contains("Name") && e.target.classList.add("rubberBand")
     setTimeout(() => {
       e.target.classList.remove("rubberBand");
@@ -11,7 +14,7 @@ export default function MainPage() {
   }) */
 
 
-/*  
+/*  MOUSE FOLLOW FOR MAKS
     const body = document.body
 
 
@@ -51,18 +54,45 @@ export default function MainPage() {
   useEffect(() => {
 
     const triangleParallax = document.querySelectorAll(".parallaxTriangle")
-    const textParallax = document.querySelectorAll(".NameText")
+    const textMaksParallax = document.querySelectorAll(".NameText")
+    const skillsText = document.querySelectorAll(".Skills-text")
+    const contactText = document.querySelectorAll(".Contact-text")
+    const portfolioText = document.querySelectorAll(".Portfolio-text")
+
+
 /*     const titleParallax = document.querySelectorAll(".parallaxTitle")
  */    let viewportWidth = window.innerWidth || document.documentElement.clientWidth;
 
 
     window.onscroll = function () {
       let value = window.scrollY
+      let value2 = document.body.scrollHeight
+
       if (viewportWidth > 768) {
         triangleParallax.forEach((item) => {
           item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 100}`
         })
+
+        textMaksParallax.forEach((item) => {
+          item.style.translate = `0 ${-value * 0.42}px`
+        })
+
+        skillsText.forEach((item) => {
+          item.style.cssText = `translate: 0 ${-1600 + value2 / value * 400}px`
+        })
+
+        portfolioText.forEach((item) => {
+          item.style.cssText = `translate: 0 ${-1600 + value2 / value * 800}px`
+        })
+
+        contactText.forEach((item) => {
+          item.style.cssText = `translate: 0 ${-1600 + value2 / value * 1200}px`
+        })
       }
+
+
+
+
 
 
 
@@ -71,9 +101,6 @@ export default function MainPage() {
       })
       console.log(titleParallax) */
 
-      textParallax.forEach((item) => {
-        item.style.translate = `0 ${-value * 0.42}px`
-      })
 
       const sections = document.querySelectorAll("section")
       const links = document.querySelectorAll(".link")

@@ -5,7 +5,7 @@ export default function Skills() {
 
   const ref = React.useRef()
   React.useEffect(() => {
-    const observer = new IntersectionObserver(
+/*     const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) { entry.target.classList.add('showText') }
@@ -29,7 +29,7 @@ export default function Skills() {
     const hiddenScaleMobile = document.querySelectorAll('.hide-scale-mobile');
     hiddenScaleMobile.forEach((el) => {
       observerScaleMobile.observe(el)
-    }) 
+    }) */
 
 
     const observerScale = new IntersectionObserver(
@@ -49,7 +49,7 @@ export default function Skills() {
 
   return (
     <section className='Skills section' id='SKILLS'>
-      <div className='Skills-text hiddenText parallaxTitle'>SKILLS</div>
+      <div className='Skills-text showText parallaxTitle'>SKILLS</div>
       <div className='Skills-box'></div>
 
     </section>

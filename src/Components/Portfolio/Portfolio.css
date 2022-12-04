@@ -20,8 +20,7 @@
   z-index: 4;
   color: var(--background);
   opacity: 1;
-  transform: rotate(-90deg);
-  transform: rotate(-90deg) translateY(-200px);
+  transform: rotate(-90deg) translateY(0px);
   left: -270px;
   cursor: default;
   -webkit-user-select: none;
