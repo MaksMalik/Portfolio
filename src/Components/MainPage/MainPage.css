@@ -424,6 +424,47 @@
   }
 
 
+  @media only screen and (max-width: 350px) {
+    .NameText div:nth-child(1) {
+      font-size: 30px;
+    }
+
+    .NameText div:nth-child(2) span:nth-child(1) {
+      font-size: 50px;
+    }
+
+    .NameText div:nth-child(2) span:nth-child(2) {
+      font-size: 50px;
+    }
+
+    .NameText div:nth-child(2) span:nth-child(3) {
+      font-size: 50px;
+    }
+
+    .NameText div:nth-child(2) span:nth-child(4) {
+      font-size: 50px;
+    }
+
+    .NameText div:nth-child(3) span {
+      font-size: 30px;
+    }
+
+    .NameText {
+      font-size: 65px;
+    }
+
+    .button a {
+      font-size: 8px;
+      padding: 10px 10px 10px 10px;
+      margin: 15px 10px 20px 0;
+    }
+
+    .button a:nth-child(2) {
+      margin: 15px 0px 20px 0;
+    }
+  }
+
+
   .scroll i {
     color: white;
     font-size: 25px;
