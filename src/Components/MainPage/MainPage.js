@@ -107,6 +107,7 @@ export default function MainPage() {
       const portfolioElements = document.querySelectorAll(".Portfolio-box-element")
       const portfolioBox = document.querySelectorAll(".Portfolio-box")
       const contactBox = document.querySelectorAll(".Contact-box")
+      const skillsBox = document.querySelectorAll(".Skills-box")
 
 
 
@@ -117,6 +118,10 @@ export default function MainPage() {
 
         contactBox.forEach((item) => {
           item.style.cssText = `translate: ${1600 - value2 / value * 1200}px 0`
+        })
+
+        skillsBox.forEach((item) => {
+          item.style.cssText = `translate: ${1600 - value2 / value * 400}px 0`
         })
       }
 
