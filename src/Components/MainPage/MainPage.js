@@ -113,18 +113,22 @@ export default function MainPage() {
           if (window.innerHeight / 2 > rect.top) {
             portfolioElement.style.transform = "scale(1.1)"
             portfolioElement.style.filter = "grayscale(0)"
-
-          }
-          if (window.innerHeight / 2 <= rect.top) {
-            portfolioElement.style.transform = "scale(1)"
-            portfolioElement.style.filter = "grayscale(0.9)"
-
           }
 
-          if (window.innerHeight / 4 > rect.top) {
+          if (window.innerHeight / 3.5 > rect.top) {
             portfolioElement.style.transform = "scale(1)"
             portfolioElement.style.filter = "grayscale(0.9)"
           }
+
+
+          if (window.innerHeight / 2 < rect.top) {
+            portfolioElement.style.transform = "scale(1)"
+            portfolioElement.style.filter = "grayscale(0.9)"
+          }
+
+      
+
+          
         })
       }
 
