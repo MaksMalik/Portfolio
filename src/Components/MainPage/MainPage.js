@@ -14,38 +14,38 @@ export default function MainPage() {
   }) */
 
 
-/*  MOUSE FOLLOW FOR MAKS
-    const body = document.body
-
-
-    function parallaxF(e) {
-      this.querySelectorAll(".parallax").forEach(element => {
-        const speed = element.getAttribute("data-speed")
-        const x = (window.innerWidth - e.pageX * speed) / 1000
-        const y = (window.innerHeight - e.pageY * speed) / 1000
-        element.style.transform = `translateX(${x}px) translateY(${y}px)`
-      })
-
-
-    }
-
-    document.addEventListener('mousemove', (e) => {
-      if (window.matchMedia("(pointer: coarse)").matches) {
-        const el = document.createElement('div');
-        el.setAttribute('class', 'trail')
-        el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
-        el.onanimationend = () => {
-          el.remove()
-        }
-        body.insertAdjacentElement('beforeend', el)
+  /*  MOUSE FOLLOW FOR MAKS
+      const body = document.body
+  
+  
+      function parallaxF(e) {
+        this.querySelectorAll(".parallax").forEach(element => {
+          const speed = element.getAttribute("data-speed")
+          const x = (window.innerWidth - e.pageX * speed) / 1000
+          const y = (window.innerHeight - e.pageY * speed) / 1000
+          element.style.transform = `translateX(${x}px) translateY(${y}px)`
+        })
+  
+  
       }
-    })
   
-  if (("ontouchstart" in document.documentElement)) { }
-  else {
-    document.addEventListener("mousemove", parallaxF)
-  } */
-  
+      document.addEventListener('mousemove', (e) => {
+        if (window.matchMedia("(pointer: coarse)").matches) {
+          const el = document.createElement('div');
+          el.setAttribute('class', 'trail')
+          el.setAttribute('style', `left: ${e.clientX}px; top: ${e.clientY}px`);
+          el.onanimationend = () => {
+            el.remove()
+          }
+          body.insertAdjacentElement('beforeend', el)
+        }
+      })
+    
+    if (("ontouchstart" in document.documentElement)) { }
+    else {
+      document.addEventListener("mousemove", parallaxF)
+    } */
+
 
 
 
@@ -104,9 +104,32 @@ export default function MainPage() {
 
       const sections = document.querySelectorAll("section")
       const links = document.querySelectorAll(".link")
+      const portfolioElements = document.querySelectorAll(".Portfolio-box-element")
+
+      if (viewportWidth < 560) {
+        portfolioElements.forEach((portfolioElement) => {
+          let rect = portfolioElement.getBoundingClientRect();
+          console.log(rect.top);
+          if (window.innerHeight / 2 > rect.top) {
+            portfolioElement.style.transform = "scale(1.1)"
+            portfolioElement.style.filter = "grayscale(0)"
+
+          }
+          if (window.innerHeight / 2 <= rect.top) {
+            portfolioElement.style.transform = "scale(1)"
+            portfolioElement.style.filter = "grayscale(0.9)"
+
+          }
+
+          if (window.innerHeight / 4 > rect.top) {
+            portfolioElement.style.transform = "scale(1)"
+            portfolioElement.style.filter = "grayscale(0.9)"
+          }
+        })
+      }
 
       sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
+        let sectionTop = section.offsetTop;
         if (window.pageYOffset >= sectionTop - 200) {
           setCurrentPage(section.getAttribute("id"))
         }
