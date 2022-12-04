@@ -3,9 +3,9 @@ import "./Skills.css"
 
 export default function Skills() {
 
-  const ref = React.useRef()
+/*   const ref = React.useRef()
   React.useEffect(() => {
-/*     const observer = new IntersectionObserver(
+   const observer = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) { entry.target.classList.add('showText') }
@@ -29,14 +29,14 @@ export default function Skills() {
     const hiddenScaleMobile = document.querySelectorAll('.hide-scale-mobile');
     hiddenScaleMobile.forEach((el) => {
       observerScaleMobile.observe(el)
-    }) */
+    }) 
 
 
     const observerScale = new IntersectionObserver(
       entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) { entry.target.classList.add('show-scale') }
-          /* else { entry.target.classList.remove('show-scale') } */
+          else { entry.target.classList.remove('show-scale') } 
         })
       })
 
@@ -45,7 +45,7 @@ export default function Skills() {
       observerScale.observe(el)
     })
   }, [ref]
-  )
+  ) */
 
   return (
     <section className='Skills section' id='SKILLS'>

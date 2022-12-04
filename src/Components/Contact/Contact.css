@@ -19,7 +19,7 @@
   font-size: 200px;
   z-index: 4;
   color: var(--background);
-  opacity: 0.4;
+  opacity: 1;
   left: -205px;
   transform: rotate(-90deg);
   cursor: default;
