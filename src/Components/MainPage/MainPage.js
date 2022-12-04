@@ -63,13 +63,16 @@ export default function MainPage() {
           item.style.cssText = `translate: 0 ${-value}px; scale: ${1 + value / 100}`
         })
       }
+
+
+
       /* titleParallax.forEach((item) => {
         item.style.cssText = `translate: ${value * 0.01}px 0;`
       })
       console.log(titleParallax) */
 
       textParallax.forEach((item) => {
-        item.style.cssText = `translate: 0 ${-value * 0.42}px`
+        item.style.translate = `0 ${-value * 0.42}px`
       })
 
       const sections = document.querySelectorAll("section")
