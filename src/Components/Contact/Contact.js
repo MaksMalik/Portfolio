@@ -62,13 +62,12 @@ export default function Contact() {
       <div className='Contact-box '>
         <form onSubmit={handleSubmit} ref={form}>
           <div className='Contact-box-text'>
-            <span className=' hide-scale-mobile'>Send me a message!</span>
-            <span className=' hide-scale-mobile'>Fell free to ask questions, send proposes</span>
+            <span>Send me a message!</span>
+            <span>Fell free to ask questions, send proposes</span>
           </div>
           <ThemeProvider theme={blue}>
             <FormGroup className="mainPageContact-form" >
               <TextField
-                className=' hide-scale-mobile'
                 required
                 id="outlined-required"
                 label="E-mail"
@@ -78,7 +77,6 @@ export default function Contact() {
                 onChange={(e) => setCurrentWholeEmail({ ...currentWholeEmail, currentEmail: e.target.value })}
               />
               <TextField
-                className=' hide-scale-mobile'
                 id="outlined"
                 label="Phone number"
                 type='text'
@@ -89,7 +87,6 @@ export default function Contact() {
               />
               <TextField
                 type='text'
-                className=' hide-scale-mobile'
                 required
                 id="outlined-multiline-static"
                 label="Message"
@@ -100,7 +97,7 @@ export default function Contact() {
                 onChange={(e) => setCurrentWholeEmail({ ...currentWholeEmail, currentMessage: e.target.value })}
 
               />
-              <Button type='submit' variant="contained" className="button-send hide-scale-mobile">Send message</Button>
+              <Button type='submit' variant="contained" className="button-send">Send message</Button>
             </FormGroup>
             <Alert id="alertForm" className="formAlert" severity="success">Email has been send successfully!</Alert>
           </ThemeProvider>
