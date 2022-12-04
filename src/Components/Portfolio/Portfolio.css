@@ -63,10 +63,11 @@
   filter: grayscale(0.9);
   transition: all 0.5s;
   border-radius: 10px;
+  box-shadow: 0 0 5px 5px black;
 }
 
 .Portfolio-box-element:hover {
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 10px 10px black;
   transform: scale(1.1);
   filter: grayscale(0) !important;
   cursor: pointer;

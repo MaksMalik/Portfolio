@@ -113,17 +113,25 @@ export default function MainPage() {
           if (window.innerHeight / 2 > rect.top) {
             portfolioElement.style.transform = "scale(1.1)"
             portfolioElement.style.filter = "grayscale(0)"
+            portfolioElement.style.borderRadius = "0"
+            portfolioElement.style.boxShadow = "0 0 5px 5px black"
           }
 
           if (window.innerHeight / 3.5 > rect.top) {
             portfolioElement.style.transform = "scale(1)"
             portfolioElement.style.filter = "grayscale(0.9)"
+            portfolioElement.style.borderRadius = "10px"
+            portfolioElement.style.boxShadow = "0 0 2px 2px black"
+
           }
 
 
           if (window.innerHeight / 2 < rect.top) {
             portfolioElement.style.transform = "scale(1)"
             portfolioElement.style.filter = "grayscale(0.9)"
+            portfolioElement.style.borderRadius = "10px"
+            portfolioElement.style.boxShadow = "0 0 2px 2px black"
+
           }
 
       
