@@ -397,13 +397,36 @@
     width: 100px;
     height: 100px;
     left: -50px;
+    z-index: 123;
+  }
 
+  .triangle-left::before {
+    display: block;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.247);
+    box-shadow: 0 0 10px black;
+    width: 250px;
+    height: 250px;
+    z-index: 0;
   }
 
   .triangle-right {
     width: 100px;
     height: 100px;
     right: -50px;
+  }
+
+  .triangle-right::before {
+    display: block;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.247);
+    box-shadow: 0 0 10px black;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+    z-index: 0;
   }
 }
 

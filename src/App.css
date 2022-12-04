@@ -59,6 +59,11 @@ html {
   float: none !important;
 }
 
+body {
+  background: var(--background2);
+  background: linear-gradient(180deg, var(--background) 0%, var(--background2) 100%);
+}
+
 @media only screen and (max-width: 768px) {
   html {
     -ms-scroll-snap-type: none;
