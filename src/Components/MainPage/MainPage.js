@@ -117,11 +117,11 @@ export default function MainPage() {
         })
 
         contactBox.forEach((item) => {
-          item.style.cssText = `translate: ${-1600 + value2 / value * 1200}px 0`
+          item.style.cssText = `translate: ${1600 - value2 / value * 1200}px 0`
         })
 
         skillsBox.forEach((item) => {
-          item.style.cssText = `translate: ${-1600 + value2 / value * 400}px 0`
+          item.style.cssText = `translate: ${1600 - value2 / value * 400}px 0`
         })
       }
 
