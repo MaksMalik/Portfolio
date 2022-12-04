@@ -18,9 +18,6 @@ export default function Contact() {
       <div className='Contact-text showText' id='Contact-box'>CONTACT</div>
 
       <div className='Contact-box hide-scale'>
-        <div className='Contact-map-box'>
-          <div className='Contact-map'></div>
-        </div>
         <div>
           <div className='Contact-box-text'>
             <span className='hide-scale hide-scale-mobile'>Send me a message!</span>
