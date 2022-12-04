@@ -59,19 +59,19 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
-  filter: grayscale(0.9);
   transition: all 0.5s;
-  border-radius: 10px;
-  box-shadow: 0 0 5px 5px black;
+  box-shadow: 0 0 2px 2px black;
+  opacity: 0.6;
+  filter: grayscale(0.9)
 }
 
 .Portfolio-box-element:hover {
-  box-shadow: 0 0 10px 10px black;
+  box-shadow: 0 0 5px 5px black;
   transform: scale(1.1);
-  filter: grayscale(0) !important;
+  filter: grayscale(0);
   cursor: pointer;
   border-radius: 0px;
-  border-radius: 0px;
+  opacity: 1;
 }
 
 .Portfolio-box-row:nth-child(2) a:nth-child(1) .Portfolio-box-element {
@@ -107,7 +107,7 @@
 }
 
 
-@media only screen and (max-width: 1600px) {
+@media only screen and (max-width: 1620px) {
   .Portfolio-box-element {
     height: 250px;
     width: 300px;

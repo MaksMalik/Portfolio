@@ -46,7 +46,7 @@ export default function Contact() {
         alertForm.style.cssText = "opacity: 1"
 
       })
-    
+
       .then(() => {
         setTimeout(() => {
           alertForm.style.cssText = "opacity: 0"

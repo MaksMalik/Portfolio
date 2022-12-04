@@ -135,6 +135,7 @@ export default function MainPage() {
             portfolioElement.style.filter = "grayscale(0)"
             portfolioElement.style.borderRadius = "0"
             portfolioElement.style.boxShadow = "0 0 5px 5px black"
+            portfolioElement.style.opacity = "1"
           }
 
           if (window.innerHeight / 3.5 > rect.top) {
@@ -142,7 +143,7 @@ export default function MainPage() {
             portfolioElement.style.filter = "grayscale(0.9)"
             portfolioElement.style.borderRadius = "10px"
             portfolioElement.style.boxShadow = "0 0 2px 2px black"
-
+            portfolioElement.style.opacity = "0.6"
           }
 
 
@@ -151,7 +152,7 @@ export default function MainPage() {
             portfolioElement.style.filter = "grayscale(0.9)"
             portfolioElement.style.borderRadius = "10px"
             portfolioElement.style.boxShadow = "0 0 2px 2px black"
-
+            portfolioElement.style.opacity = "0.6"
           }
 
 
