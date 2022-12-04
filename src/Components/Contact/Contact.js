@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Contact.css"
-import { TextField, Button, createTheme, ThemeProvider } from '@mui/material';
+import { TextField, Button, createTheme, ThemeProvider, FormControl } from '@mui/material';
 
 const blue = createTheme({
   palette: {
@@ -12,10 +12,14 @@ const blue = createTheme({
 
 export default function Contact() {
 
+  const handleSubmit = (event) => {
+    console.log("Asdad")
+  }
+
 
   return (
     <section className='Contact section' id='CONTACT'>
-      <div className='Contact-text showText' id='Contact-box'>CONTACT</div>
+      <div className='Contact-text ' id='Contact-box'>CONTACT</div>
 
       <div className='Contact-box hide-scale'>
         <div>
@@ -24,7 +28,7 @@ export default function Contact() {
             <span className='hide-scale hide-scale-mobile'>Fell free to ask questions, send proposes</span>
           </div>
           <ThemeProvider theme={blue}>
-            <div className="mainPageContact-form">
+            <FormControl className="mainPageContact-form" onSubmit={handleSubmit}>
               <TextField
                 className='hide-scale hide-scale-mobile'
                 required
@@ -45,7 +49,7 @@ export default function Contact() {
                 rows={6}
               />
               <Button variant="contained" className="button-send hide-scale hide-scale-mobile">Send message</Button>
-            </div>
+            </FormControl>
           </ThemeProvider>
         </div>
       </div>
