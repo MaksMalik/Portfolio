@@ -107,6 +107,18 @@ label {
   color: var(--background) !important;
 }
 
+.formAlert {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 145, 51) !important;
+  font-family: 'Fira Sans', sans-serif !important;
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.658) !important;
+  transition: all 1s !important;
+}
+
 .Contact-box-text {
   display: flex;
   flex-direction: column;
