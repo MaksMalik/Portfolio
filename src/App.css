@@ -4,7 +4,7 @@
   --background: #181818;
   --background2: #131313;
 
-/*   --blue: #B9732f;
+  /*   --blue: #B9732f;
   --red: #741212;
   --background: #ffffff;
   --background2: #437FC7; */
@@ -28,7 +28,7 @@
 /* Firefox */
 * {
   scrollbar-width: auto;
-  scrollbar-color: var(--blue) var(--background);
+  scrollbar-color: var(--blue) var(--background2);
 }
 
 /* Chrome, Edge, and Safari */
@@ -37,19 +37,22 @@
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--background);
+  background: var(--background2);
+  box-shadow: 0 0 20px red;
+
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: var(--blue);
   border-radius: 0px;
-  border: 3px none var(--background);
+  border: 1px none var(--background2);
+  box-shadow: 0px 0px 20px 20px var(--blue);
 }
 
 
 html {
   scroll-behavior: smooth;
-  background: var(--background);
+  background: var(--background2);
   font-family: 'Anton', sans-serif;
   -ms-scroll-snap-type: y mandatory;
   scroll-snap-type: y mandatory;

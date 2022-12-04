@@ -78,7 +78,7 @@ ul li a::before {
   width: 0;
   overflow: hidden;
   transition: 1s;
-  border-right: 4px solid white;
+  border-right: 6px solid white;
 }
 
 
@@ -116,7 +116,7 @@ ul li a::before {
 .Navbar__icon {
   margin: 10px;
   height: 25px;
-  width: 25px;
+  width: 27px;
   cursor: pointer;
   background-size: contain;
   background-repeat: no-repeat;
