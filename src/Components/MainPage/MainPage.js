@@ -105,6 +105,22 @@ export default function MainPage() {
       const sections = document.querySelectorAll("section")
       const links = document.querySelectorAll(".link")
       const portfolioElements = document.querySelectorAll(".Portfolio-box-element")
+      const portfolioBox = document.querySelectorAll(".Portfolio-box")
+      const contactBox = document.querySelectorAll(".Contact-box")
+
+
+
+      if (viewportWidth > 1000) {
+        portfolioBox.forEach((item) => {
+          item.style.cssText = `translate:${-1600 + value2 / value * 800}px 0`
+        })
+
+        contactBox.forEach((item) => {
+          item.style.cssText = `translate: ${-1600 + value2 / value * 1200}px 0`
+        })
+      }
+
+
 
       if (viewportWidth < 560) {
         portfolioElements.forEach((portfolioElement) => {
@@ -133,9 +149,9 @@ export default function MainPage() {
 
           }
 
-      
 
-          
+
+
         })
       }
 

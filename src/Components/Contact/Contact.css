@@ -43,8 +43,6 @@
   margin: 50px 50px 50px 250px;
   width: calc(100% - 280px);
   height: 100%;
-  transition-delay: 1500ms;
-  transition: all 0.5s;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -80,12 +78,9 @@ label {
   transform: scale(1.2) !important;
   opacity: 1 !important;
   filter: blur(5px) !important;
-  transition: all 1s !important;
 }
 
 .show-scale {
-  transition: all 1s !important;
-  transition-delay: 300ms !important;
   transform: scale(1) !important;
   opacity: 1 !important;
   filter: blur(0px) !important;
