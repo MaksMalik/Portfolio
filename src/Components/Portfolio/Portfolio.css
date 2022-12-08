@@ -76,13 +76,11 @@
 
 .Portfolio-box-row:nth-child(2) a:nth-child(1) .Portfolio-box-element {
   background-image: url("./images/DeliverTo.jpeg");
-
 }
 
 
 .Portfolio-box-row:nth-child(2) a:nth-child(2) .Portfolio-box-element {
   background-image: url("./images/MyExpenses.jpeg");
-
 }
 
 .Portfolio-box-row:nth-child(3) a:nth-child(1) .Portfolio-box-element {
