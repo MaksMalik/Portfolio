@@ -82,11 +82,11 @@ export default function MainPage() {
         })
 
         portfolioText.forEach((item) => {
-          item.style.cssText = `translate: 0 ${-1600 + value2 / value * 800}px`
+          item.style.cssText = `translate: 0 ${-1200 + value2 / value * 400}px`
         })
 
         contactText.forEach((item) => {
-          item.style.cssText = `translate: 0 ${-1600 + value2 / value * 1200}px`
+          item.style.cssText = `translate: 0 ${-1200 + value2 / value * 800}px`
         })
       }
 
@@ -112,16 +112,16 @@ export default function MainPage() {
 
 
       if (viewportWidth > 1000) {
+        skillsBox.forEach((item) => {
+          item.style.cssText = `translate: ${1600 - value2 / value * 400}px 0`
+        })
+
         portfolioBox.forEach((item) => {
-          item.style.cssText = `translate:${-1600 + value2 / value * 800}px 0`
+          item.style.cssText = `translate: ${1200 - value2 / value * 400}px 0`
         })
 
         contactBox.forEach((item) => {
-          item.style.cssText = `translate: ${1600 - value2 / value * 1200}px 0`
-        })
-
-        skillsBox.forEach((item) => {
-          item.style.cssText = `translate: ${1600 - value2 / value * 400}px 0`
+          item.style.cssText = `translate:${-1200 + value2 / value * 800}px 0`
         })
       }
 

@@ -19,9 +19,9 @@ export default function NavBar() {
           <li>
             <a className="link active odd" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
           </li>
-          <li>
+{/*           <li>
             <a className="link even" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
-          </li>
+          </li> */}
           <li>
             <a className="link odd" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
           </li>
@@ -50,9 +50,9 @@ export default function NavBar() {
             <li>
               <a className="link active" href='#HOME' data-text="&nbsp;HOME">&nbsp;HOME&nbsp;</a>
             </li>
-            <li>
+{/*             <li>
               <a className="link" href='#SKILLS' data-text="&nbsp;SKILLS">&nbsp;SKILLS&nbsp;&nbsp;</a>
-            </li>
+            </li> */}
             <li>
               <a className="link" href='#PORTFOLIO' data-text="&nbsp;PORTFOLIO">&nbsp;PORTFOLIO&nbsp;&nbsp;&nbsp;&nbsp;</a>
             </li>
