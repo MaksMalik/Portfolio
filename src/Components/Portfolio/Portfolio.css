@@ -1,5 +1,5 @@
 .Portfolio {
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,6 +10,7 @@
   align-items: flex-end;
   scroll-snap-align: start;
   background-color: var(--background2);
+  box-shadow: 0 0 10px black;
   overflow: hidden;
   font-family: 'Anton', sans-serif;
 }

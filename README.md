@@ -1,2 +1,2 @@
-# Portfolio (in progress)
+# Portfolio
 LIVE: https://maks-malik.netlify.app/
