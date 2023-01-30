@@ -15,7 +15,7 @@ export default function Portfolio() {
         <div className='Portfolio-box-row'>
           <a href='https://one-future.netlify.app/' target="_blank" rel="noreferrer"><div className='Portfolio-box-element'></div></a>
           <a href='https://oxoxo.netlify.app/' target="_blank" rel="noreferrer"><div className='Portfolio-box-element'></div></a>
-          <a href='https://vpn-connect.netlify.app/' target="_blank" rel="noreferrer"><div className='Portfolio-box-element'></div></a>
+          <a href='https://vault-storage.netlify.app/' target="_blank" rel="noreferrer"><div className='Portfolio-box-element'></div></a>
         </div>
       </div>
     </section>
