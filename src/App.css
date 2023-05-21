@@ -52,8 +52,8 @@ html {
   scroll-behavior: smooth;
   background: var(--background2);
   font-family: 'Anton', sans-serif;
-  -ms-scroll-snap-type: y mandatory;
-  scroll-snap-type: y mandatory;
+  /*-ms-scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;*/
   overflow-y: scroll;
   margin: auto !important;
   float: none !important;
